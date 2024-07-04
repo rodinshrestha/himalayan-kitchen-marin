@@ -16,7 +16,7 @@ ${({ theme }) => css`
     margin: 0;
   }
 
-  @font-face {
+  /* @font-face {
     font-family: "SourceSans";
     font-weight: 100 900;
     font-display: swap;
@@ -33,12 +33,12 @@ ${({ theme }) => css`
     font-style: normal;
     font-named-instance: "Regular";
     src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
-  }
+  } */
 
   body {
     background-color: #5e4933;
     overflow-x: hidden;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: ${theme.font.defaultSystemTheme};
     width: 100%;
 
     &.menu-open {

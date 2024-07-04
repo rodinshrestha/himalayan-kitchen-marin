@@ -1,3 +1,4 @@
 export const font = {
-  sourceSansPro: "Source Sans Pro, Helvetica, sans-serif",
+  defaultSystemTheme:
+    "system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif",
 };

@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const StyledDiv = styled.div`
   ${({ theme }) => css`
-    font-family: ${theme.font.sourceSansPro};
+    font-family: ${theme.font.defaultSystemTheme};
     &.error {
       .label-wrapper {
         color: red;
@@ -37,10 +37,7 @@ export const InputStyle = styled.input`
     border: none;
     outline: 0;
     padding: 0 1em;
-    font-family:
-      Source Sans Pro,
-      Helvetica,
-      sans-serif;
+    font-family: ${theme.font.defaultSystemTheme};
     font-size: 17pt;
     color: ${theme.coreColor.textColor};
     letter-spacing: 1px;

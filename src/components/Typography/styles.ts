@@ -18,7 +18,7 @@ const style = (theme: DefaultTheme) => css`
   &.p,
   &.subtitle2,
   &.subtitle1 {
-    font-family: ${theme.font.sourceSansPro};
+    font-family: ${theme.font.defaultSystemTheme};
   }
 
   &.h1 {

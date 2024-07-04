@@ -40,8 +40,7 @@ export const StyledDiv = styled.div`
         justify-content: center;
         position: relative;
         text-decoration: none;
-        font-family: "Source Sans Pro", Helvetica, sans-serif;
-
+        font-family: ${theme.font.defaultSystemTheme};
         img {
           /* width: 50px; */
           vertical-align: middle;

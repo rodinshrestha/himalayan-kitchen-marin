@@ -21,8 +21,7 @@ export const StyledUl = styled.ul`
     }
 
     li {
-      font-family: "Source Sans Pro", Helvetica, sans-serif;
-
+      font-family: ${theme.font.defaultSystemTheme};
       &.link-item {
         font-size: 24px;
         position: relative;

@@ -3,7 +3,8 @@ import styled, { css } from "styled-components";
 export const StyledSection = styled.section`
   ${({ theme }) => css`
     background-color: ${theme.coreColor.bg};
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: ${theme.font.defaultSystemTheme};
+
     border-bottom: 1px solid rgba(212, 212, 255, 0.1);
     border-top: 1px solid rgba(212, 212, 255, 0.1);
 
@@ -20,7 +21,7 @@ export const StyledSection = styled.section`
         padding: 4em;
         padding-left: 0;
         flex-grow: 1;
-        font-family: ${theme.font.sourceSansPro};
+        font-family: ${theme.font.defaultSystemTheme};
 
         @media (max-width: ${theme.breakPoints.md}) {
           padding-top: 3em;

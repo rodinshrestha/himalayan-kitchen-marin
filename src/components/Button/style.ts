@@ -8,7 +8,7 @@ const defaultStyle = (theme: DefaultTheme) => css`
   display: inline-block;
   padding: 0 1.75em;
   outline: none;
-  font-family: ${theme.font.sourceSansPro};
+  font-family: ${theme.font.defaultSystemTheme};
   font-weight: 600;
   transition: all 0.2s ease-in-out;
   text-align: center;
