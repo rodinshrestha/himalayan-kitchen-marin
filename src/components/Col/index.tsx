@@ -70,6 +70,7 @@ const ColWrapper = styled.div<ColProps & StyledProps>`
     max-width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+    height: 100%;
 
     ${$xs &&
     `@media only screen and (min-width: 361px) {

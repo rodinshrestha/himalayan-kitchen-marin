@@ -6,15 +6,18 @@ export const StyledDiv = styled.div`
       position: relative;
       top: 0;
       cursor: pointer;
-      display: inline-block;
       width: 18px;
-      display: block;
+      display: none;
+
+      @media (max-width: ${theme.breakPoints.Lg}) {
+        display: block;
+      }
 
       span {
         width: 100%;
         height: 2px;
         display: block;
-        background-color: ${theme.color.white[100]};
+        background-color: ${theme.coreColor.textColor};
         margin-bottom: 4px;
         transition: 0.3s ease all;
         border-radius: 3px;

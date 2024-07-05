@@ -29,7 +29,7 @@ export const StyledDiv = styled.div`
     .header-wrapper {
       display: flex;
       justify-content: space-between;
-      height: 73.66px;
+      height: 90px;
 
       @media (max-width: ${theme.breakPoints.md}) {
         height: 44px;
@@ -53,7 +53,7 @@ export const StyledDiv = styled.div`
         .logo-title {
           display: flex;
           align-self: center;
-          color: ${theme.color.white["100"]};
+          color: ${theme.coreColor.textColor};
           text-transform: uppercase;
           letter-spacing: 0.25em;
           font-size: 22px;
@@ -90,7 +90,55 @@ export const StyledDiv = styled.div`
         display: flex;
         align-items: center;
         gap: 10px;
-        /* padding: 0 0.75em; */
+
+        ul {
+          list-style: none;
+          display: flex;
+          gap: 20px;
+          font-size: 18px;
+          @media (max-width: ${theme.breakPoints.Lg}) {
+            display: none;
+          }
+
+          .menu-list {
+            cursor: pointer;
+            position: relative;
+
+            &::before {
+              position: absolute;
+              content: "";
+              bottom: -8px;
+              height: 2px;
+              width: 100%;
+              visibility: hidden;
+              background-color: ${theme.coreColor.textColor};
+              -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+              -webkit-transition: all 0.3s ease-in-out 0s;
+              transition: all 0.3s ease-in-out 0s;
+            }
+
+            &:hover {
+              opacity: 0.8;
+              &::before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+              }
+            }
+
+            &.active {
+              &::before {
+                visibility: visible;
+                transform: scaleX(1);
+                -webkit-transform: scaleX(1);
+              }
+            }
+            a {
+              color: inherit;
+            }
+          }
+        }
 
         .menu-link {
           outline: none;

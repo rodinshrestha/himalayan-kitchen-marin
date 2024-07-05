@@ -16,27 +16,29 @@ ${({ theme }) => css`
     margin: 0;
   }
 
-  /* @font-face {
-    font-family: "SourceSans";
-    font-weight: 100 900;
-    font-display: swap;
+  @font-face {
+    font-family: "Oswald";
     font-style: normal;
-    font-named-instance: "Regular";
-    src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic")
+    font-weight: 200 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v53/TK3iWkUHHAIjg752FD8Gl-1PK62t.woff2)
       format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+      U+FE2E-FE2F;
   }
 
   @font-face {
-    font-family: "Source Sans Pro";
-    font-weight: 600;
+    font-family: "Vollkorn";
+    font-style: italic;
+    font-weight: 400 900;
     font-display: swap;
-    font-style: normal;
-    font-named-instance: "Regular";
-    src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
-  } */
+    src: url(https://fonts.gstatic.com/s/vollkorn/v23/0yb7GDoxxrvAnPhYGxksWEseqTo29TfO-Q.woff2)
+      format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
 
   body {
-    background-color: #5e4933;
+    background-color: ${theme.color.white["100"]};
     overflow-x: hidden;
     font-family: ${theme.font.defaultSystemTheme};
     width: 100%;

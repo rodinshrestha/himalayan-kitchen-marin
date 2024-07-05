@@ -12,6 +12,7 @@ import clsx from "clsx";
 import logo from "@/assets/images/logo.svg";
 import Menu from "../MenuList";
 import settings from "content/settings/settings.json";
+import { navLink } from "@/route/route";
 
 type Props = {
   onToggleMenu: () => void;
@@ -32,8 +33,7 @@ const Header = ({ onToggleMenu }: Props) => {
     };
   }, []);
 
-  const { home_page_title = "Himalayan Sherpa Kitchen", site_logo = "" } =
-    settings || {};
+  const { site_logo = "" } = settings || {};
 
   return (
     <>
@@ -50,16 +50,25 @@ const Header = ({ onToggleMenu }: Props) => {
                     src={site_logo || logo}
                     alt="sherpa kitchen logo"
                   />
-                  <strong className="logo-title">{home_page_title}</strong>
                 </Link>
-                <nav
-                  className="menu-wrapper"
-                  onClick={() => setIsMenuOpen((prev) => !prev)}
-                >
-                  <div className="menu-link" onClick={onToggleMenu}>
-                    Menu
-                  </div>
-                  <HamburgerMenuIcon isMenuOpen={isMenuOpen} />
+                <nav className="menu-wrapper">
+                  <ul>
+                    {navLink.map((x, i) => {
+                      const { pathname } = window.location;
+
+                      const active = pathname === x.url;
+                      return (
+                        <li className={clsx("menu-list", { active })} key={i}>
+                          <Link to={x.url}>{x.label}</Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+
+                  <HamburgerMenuIcon
+                    isMenuOpen={isMenuOpen}
+                    onClick={() => setIsMenuOpen((prev) => !prev)}
+                  />
                 </nav>
               </div>
             </Col>

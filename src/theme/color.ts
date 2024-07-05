@@ -23,9 +23,9 @@ export const color = {
 };
 
 export const defaultPalette = {
-  bg: "#5E4933",
+  bg: "#fff",
   bgAlt: "#2a2f4a",
-  textColor: "#fff",
+  textColor: "#5E4933",
   textSecondaryColor: "#5e4933",
   fg: "#ffffff",
   fgBold: "#ffffff",

@@ -16,16 +16,14 @@ const defaultStyle = (theme: DefaultTheme) => css`
   cursor: pointer;
 
   &.contained {
-    background-color: #fff;
+    background-color: ${theme.coreColor.textColor};
     box-shadow: none;
-    color: #5e4933;
-    color: ${theme.coreColor.textSecondaryColor};
-    border: 2px solid ${theme.coreColor.textColor};
+    color: ${theme.color.white["100"]};
+    border: 1px solid ${theme.coreColor.textColor};
     height: 100%;
 
     &:hover {
-      background-color: ${theme.coreColor.highlight};
-      border: 2px solid ${theme.coreColor.highlight};
+      opacity: 0.8;
     }
   }
 

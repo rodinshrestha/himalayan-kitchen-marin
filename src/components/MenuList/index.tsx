@@ -4,38 +4,12 @@ import star from "@/assets/images/4star.png";
 import Button from "../Button";
 import { StyledUl } from "./style";
 import clsx from "clsx";
-
-const linkItem = [
-  {
-    label: "Home",
-    url: "/",
-  },
-  {
-    label: "Our Story",
-    url: "/about-us",
-  },
-  {
-    label: "Menu",
-    url: "/menu",
-  },
-  {
-    label: "Gallery",
-    url: "/gallery",
-  },
-  {
-    label: "Everest Trek",
-    url: "/everest-trek",
-  },
-  {
-    label: "Contact Us",
-    url: "/contact-us",
-  },
-];
+import { navLink } from "@/route/route";
 
 const Menu = () => {
   return (
     <StyledUl className="menu-list-wrapper">
-      {linkItem.map((x) => {
+      {navLink.map((x) => {
         const { pathname } = window.location;
 
         const active = pathname === x.url;

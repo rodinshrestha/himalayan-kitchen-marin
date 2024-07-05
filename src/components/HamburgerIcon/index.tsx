@@ -5,14 +5,16 @@ import { StyledDiv } from "./style";
 
 type Props = {
   isMenuOpen: boolean;
+  onClick: () => void;
 };
 
-const HamburgerMenuIcon = ({ isMenuOpen }: Props) => {
+const HamburgerMenuIcon = ({ isMenuOpen, onClick }: Props) => {
   return (
     <StyledDiv
       className={clsx("hamburgerMenu action", {
         "is-active": isMenuOpen,
       })}
+      onClick={onClick}
     >
       <span />
       <span />

@@ -73,9 +73,9 @@ const style = (theme: DefaultTheme) => css`
   }
 
   &.subtitle1 {
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 1px;
 
     @media (max-width: ${theme.breakPoints.md}) {
       font-size: 14px;
@@ -84,14 +84,8 @@ const style = (theme: DefaultTheme) => css`
   }
 
   &.subtitle2 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
-
-    @media (max-width: ${theme.breakPoints.md}) {
-      font-size: 14px;
-      line-height: 24px;
-    }
-
     strong {
       font-weight: 500;
     }
@@ -105,7 +99,7 @@ const style = (theme: DefaultTheme) => css`
     display: inline-block;
     padding-top: 100px;
     line-height: 40px;
-    &::before {
+    /* &::before {
       position: absolute;
       content: "";
       height: 3px;
@@ -118,13 +112,17 @@ const style = (theme: DefaultTheme) => css`
         height: 2px;
         bottom: -4px;
       }
-    }
+    } */
 
     @media (max-width: ${theme.breakPoints.md}) {
       padding-top: 50px;
       font-size: 22px;
       line-height: 40px;
     }
+  }
+
+  &.section-title-helper {
+    margin-top: 40px;
   }
 `;
 

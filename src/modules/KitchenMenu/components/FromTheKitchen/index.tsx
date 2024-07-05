@@ -12,7 +12,6 @@ const FromTheKitchen = () => {
 
   return (
     <StyledDiv>
-      <h3 className="kitchen-menu-title">From the kitchen:</h3>
       <Starter
         accordionState={accordionState}
         setAccordionState={setAccordionState}

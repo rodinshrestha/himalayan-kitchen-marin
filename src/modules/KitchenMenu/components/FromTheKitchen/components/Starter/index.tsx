@@ -18,42 +18,42 @@ const Starter = ({ accordionState, setAccordionState }: Props) => {
   const { starter_salad_description = "" } = menuHelper || {};
 
   return (
-    <Accordion
-      title={STARTERS_AND_SALADS}
-      expanded={accordionState === STARTERS_AND_SALADS}
-      onChange={() =>
-        setAccordionState((prev) =>
-          prev === STARTERS_AND_SALADS ? "" : STARTERS_AND_SALADS
-        )
-      }
-    >
-      <div className="table-wrapper">
-        {starter_salad_description && (
-          <p className="dish-note-content">{starter_salad_description}</p>
-        )}
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((item, i) => {
-              return (
-                <DisplayMenu
-                  name={item.name}
-                  price={item.price}
-                  desc={item.description}
-                  key={i}
-                />
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
-    </Accordion>
+    // <Accordion
+    //   title={STARTERS_AND_SALADS}
+    //   expanded={accordionState === STARTERS_AND_SALADS}
+    //   onChange={() =>
+    //     setAccordionState((prev) =>
+    //       prev === STARTERS_AND_SALADS ? "" : STARTERS_AND_SALADS
+    //     )
+    //   }
+    // >
+    <div className="table-wrapper">
+      {starter_salad_description && (
+        <p className="dish-note-content">{starter_salad_description}</p>
+      )}
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((item, i) => {
+            return (
+              <DisplayMenu
+                name={item.name}
+                price={item.price}
+                desc={item.description}
+                key={i}
+              />
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+    // </Accordion>
   );
 };
 

@@ -1,11 +1,11 @@
 import React from "react";
 
 import Header from "@/components/Header";
-import Contact from "@/modules/Contact";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "@/theme/GlobalStyles";
 import { getTheme } from "@/theme/theme";
+import OppeningHours from "@/modules/OppeningHours";
 
 type Props = {
   children: React.ReactNode;
@@ -22,8 +22,8 @@ const BaseLayout = ({ children }: Props) => {
         <div className="body">
           <div id="layout-wrapper">
             <Header onToggleMenu={handleToggleMenu} />
-            {children}
-            <Contact />
+            <main> {children}</main>
+            <OppeningHours />
             <Footer />
           </div>
         </div>

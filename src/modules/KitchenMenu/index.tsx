@@ -19,12 +19,12 @@ const KitchenMenu = () => {
   } = menuHelper || {};
   return (
     <StyledDiv>
-      <Container>
+      <Container fluid>
         <Row>
           <Col>
             <header className="major section-title">
               <Typography as="h1" className="section-title">
-                Menu
+                WELCOME TO YAK & YETI
               </Typography>
             </header>
 
@@ -35,7 +35,7 @@ const KitchenMenu = () => {
           </Col>
         </Row>
 
-        <Row>
+        {/* <Row>
           <Col>
             <div className="kitchen-information-wrapper">
               {menu_footer_description && (
@@ -61,7 +61,7 @@ const KitchenMenu = () => {
               </div>
             </div>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </StyledDiv>
   );

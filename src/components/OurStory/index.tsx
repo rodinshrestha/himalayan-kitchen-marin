@@ -11,21 +11,20 @@ const OurStory = () => {
   const { story_content = "" } = settings || {};
   return (
     <StyledSection>
-      <Container>
+      <Container fluid>
         <Row>
           <Col>
             <div className="our-story-wrapper">
-              <header className="our-story-title">
+              <div className="our-story-title">
                 <Typography as="h2" className="section-title">
-                  The Story
+                  Our Story
                 </Typography>
-              </header>
-              {story_content && <Typography as="p">{story_content}</Typography>}
-              <div className="link-wrapper">
-                <Button href="/about-us" skin="outline" size="md">
-                  Learn more
-                </Button>
+                <Typography as="h6" className="section-title-helper">
+                  From the Himalayas to the heart of wine country - Napa, CA
+                </Typography>
               </div>
+
+              {story_content && <Typography as="p">{story_content}</Typography>}
             </div>
           </Col>
         </Row>

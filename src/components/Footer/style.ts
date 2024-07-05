@@ -3,18 +3,9 @@ import styled, { css } from "styled-components";
 export const StyledFooter = styled.footer`
   ${({ theme }) => css`
     display: flex;
-    flex-direction: column;
-    gap: 20px;
     justify-content: center;
     align-items: center;
-
-    padding: 40px 0;
-    .social-icons-list {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
+    padding: 20px 0;
     .copyright {
       list-style: none;
       font-family: ${theme.font.defaultSystemTheme};

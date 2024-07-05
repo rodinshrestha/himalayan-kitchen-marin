@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 
 export const StyledSection = styled.section`
   ${({ theme }) => css`
-    background-color: ${theme.coreColor.bgAlt};
     padding-bottom: 6em;
 
     @media (max-width: ${theme.breakPoints.md}) {
@@ -13,7 +12,7 @@ export const StyledSection = styled.section`
       color: ${theme.coreColor.textColor};
       display: flex;
       flex-direction: column;
-      gap: 60px;
+      gap: 10px;
 
       @media (max-width: ${theme.breakPoints.md}) {
         gap: 30px;
