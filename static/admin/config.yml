@@ -19,7 +19,7 @@ collections:
       - { label: "Price", name: "price", widget: "string" }
 
   - name: "momo"
-    label: "MoMo - Steamed Dumplings"
+    label: "MoMo(Steamed Dumplings)"
     folder: "/content/kitchen_menu/momo"
     create: true
     slug: "{{name}}"
@@ -28,9 +28,9 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
 
-  - name: "curry_dishes"
-    label: "Curry Dishes"
-    folder: "/content/kitchen_menu/curry_dishes"
+  - name: "vegetable_tarkari_curries"
+    label: "Vegetable Tarkari(Vegetable Curries)"
+    folder: "/content/kitchen_menu/vegetable_tarkari_curries"
     create: true
     slug: "{{name}}"
     fields:
@@ -38,9 +38,39 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
 
-  - name: "tandoori"
-    label: "Tandoori"
-    folder: "/content/kitchen_menu/tandoori"
+  - name: "chicken_curries"
+    label: "Chicken Curries"
+    folder: "/content/kitchen_menu/chicken_curries"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "lamb_curries"
+    label: "Lamb Curries"
+    folder: "/content/kitchen_menu/lamb_curries"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "seafood_curries"
+    label: "Sea Food Curries"
+    folder: "/content/kitchen_menu/seafood_curries"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "biryani"
+    label: "Biryani"
+    folder: "/content/kitchen_menu/biryani"
     create: true
     slug: "{{name}}"
     fields:
@@ -51,6 +81,16 @@ collections:
   - name: "tika_masala"
     label: "Tika Masala"
     folder: "/content/kitchen_menu/tika_masala"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "tandoori"
+    label: "Tandoori"
+    folder: "/content/kitchen_menu/tandoori"
     create: true
     slug: "{{name}}"
     fields:
@@ -142,7 +182,7 @@ collections:
         file: "content/settings/kitchen_menu_helper.json"
         fields:
           - label: "Curry Dishes Description"
-            name: "curry_dishes_description"
+            name: "TARKARI_CURRIES_description"
             widget: "string"
 
           - label: "Momo Description"

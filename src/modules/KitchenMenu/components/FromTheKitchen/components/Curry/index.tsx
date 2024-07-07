@@ -1,28 +1,27 @@
 import React from "react";
-import Accordion from "@/components/Accordion";
 import DisplayMenu from "../../../DisplayMenu";
-import { CURRY_DISHES } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
+import { TARKARI_CURRIES } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 import menuHelper from "content/settings/kitchen_menu_helper.json";
 import Typography from "@/components/Typography";
 import { StyledDiv } from "./style";
 
 const Curry = () => {
-  const data = useAllMarkdownData("curry_dishes");
+  const data = useAllMarkdownData("tarkari_curries");
 
   if (!data.length) return null;
 
-  const { curry_dishes_description = "" } = menuHelper || {};
+  const { TARKARI_CURRIES_description = "" } = menuHelper || {};
 
   return (
     <StyledDiv>
       <div className="dish-information-wrapper">
         <Typography as="h3" className="menu-title">
-          {CURRY_DISHES}
+          {TARKARI_CURRIES}
         </Typography>
-        {curry_dishes_description && (
+        {TARKARI_CURRIES_description && (
           <Typography as="subtitle2" className="dish-note-content">
-            {curry_dishes_description}
+            {TARKARI_CURRIES_description}
           </Typography>
         )}
       </div>
