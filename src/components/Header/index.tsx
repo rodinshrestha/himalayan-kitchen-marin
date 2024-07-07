@@ -54,7 +54,8 @@ const Header = ({ onToggleMenu }: Props) => {
                 <nav className="menu-wrapper">
                   <ul>
                     {navLink.map((x, i) => {
-                      const { pathname } = window.location;
+                      if (typeof window === "undefined") return;
+                      const { pathname = "" } = window?.location || "";
 
                       const active = pathname === x.url;
                       return (
