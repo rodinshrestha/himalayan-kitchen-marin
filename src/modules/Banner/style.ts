@@ -1,10 +1,9 @@
 import styled, { css } from "styled-components";
-import heroBanner from "@/assets/images/hero-banner-image.jpeg";
 
 export const StyledDiv = styled.div`
   ${({ theme }) => css`
     background-color: ${theme.coreColor.bg};
-    background-image: url(${heroBanner});
+    background-image: url(${""});
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;

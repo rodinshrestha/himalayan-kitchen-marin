@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
-import heroBanner from "@/assets/images/hero-banner-image.jpeg";
+// import heroBanner from "@/assets/images/hero-banner-image.jpeg";
 
 export const StyledSection = styled.section`
   ${({ theme }) => css`
     .about-us-wrapper {
-      background-image: url(${heroBanner});
+      background-image: url(${""});
       background-color: ${theme.coreColor.bg};
       background-attachment: fixed;
       background-repeat: no-repeat;

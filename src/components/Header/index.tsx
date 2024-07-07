@@ -9,7 +9,7 @@ import { Col } from "../Col";
 import HamburgerMenuIcon from "../HamburgerIcon";
 import Drawer from "../Drawer";
 import clsx from "clsx";
-import logo from "@/assets/images/logo.svg";
+import logo from "@/assets/images/yak-yeti-logo-xs.png";
 import Menu from "../MenuList";
 import settings from "content/settings/settings.json";
 import { navLink } from "@/route/route";
