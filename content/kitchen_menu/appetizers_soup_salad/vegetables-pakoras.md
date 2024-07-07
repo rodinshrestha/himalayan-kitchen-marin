@@ -1,5 +1,5 @@
 ---
-name: Vegetables Pakoras (4PCs)
-description: Golden fried mixed vegetables fritters served with our homemade mint sauce
-price: $8.50
+name: Vegetables Pakoras
+description: Golden fried mixed vegetables fritters served with dairy based mint sauce.
+price: $8.00
 ---
