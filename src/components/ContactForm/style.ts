@@ -12,20 +12,10 @@ export const StyledDiv = styled.div`
         padding-left: 0;
       }
 
-      @media (max-width: ${theme.breakPoints.md}) {
-        padding-top: 3em;
-        padding-bottom: 3em;
-      }
-
-      @media (max-width: ${theme.breakPoints.md}) {
-        border-right: none;
-        padding-right: 0;
-      }
-
-      .contact-title {
+      /* .contact-title {
         padding-top: 0;
         margin-bottom: 2em;
-      }
+      } */
 
       .form-inner-wrapper {
         display: flex;

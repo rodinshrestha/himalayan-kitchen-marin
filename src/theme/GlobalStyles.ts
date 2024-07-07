@@ -72,6 +72,11 @@ ${({ theme }) => css`
     }
     border-top: 1px solid rgba(212, 212, 255, 0.1);
   }
+
+  .overflow-hidden {
+    height: 100vh;
+    overflow: hidden;
+  }
 `}
 
  

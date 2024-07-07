@@ -4,14 +4,14 @@ import FromTheKitchen from "./components/FromTheKitchen";
 import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
-import menuHelper from "content/settings/menu_list_helper.json";
+import settings from "content/settings/settings.json";
 
 import Typography from "@/components/Typography";
 import Overlay from "@/components/Overlay";
 import SectionBgImage from "@/components/SectionBgImage";
 
 const KitchenMenu = () => {
-  const { menu_service_charge_description = "" } = menuHelper || {};
+  const { menu_service_charge_description = "" } = settings || {};
   return (
     <StyledDiv>
       <SectionBgImage

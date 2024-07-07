@@ -39,7 +39,7 @@ export const StyledSection = styled.section`
       display: flex;
       gap: 60px;
       @media (max-width: ${theme.breakPoints.md}) {
-        flex-direction: column;
+        flex-direction: column-reverse;
       }
 
       .achievement-contact-form-wrapper {

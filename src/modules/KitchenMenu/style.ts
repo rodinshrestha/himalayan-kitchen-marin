@@ -11,6 +11,9 @@ export const StyledDiv = styled.div`
       .h2 {
         padding-top: 40px !important;
         text-align: center;
+        @media (max-width: ${theme.breakPoints.md}) {
+          text-align: left;
+        }
       }
     }
     .kitchen-menu-wrapper {
@@ -44,6 +47,9 @@ export const StyledDiv = styled.div`
         grid-template-columns: 1fr 1fr;
         gap: 20px;
         column-gap: 40px;
+        @media (max-width: ${theme.breakPoints.md}) {
+          grid-template-columns: 1fr;
+        }
       }
     }
 

@@ -32,7 +32,7 @@ export const StyledDiv = styled.div`
       height: 90px;
 
       @media (max-width: ${theme.breakPoints.md}) {
-        height: 44px;
+        height: 60px;
       }
 
       .logo-wrapper {
@@ -46,7 +46,7 @@ export const StyledDiv = styled.div`
           vertical-align: middle;
 
           @media (max-width: ${theme.breakPoints.md}) {
-            width: 50px;
+            width: 75px;
           }
         }
 

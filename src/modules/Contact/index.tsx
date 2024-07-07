@@ -35,7 +35,7 @@ const Contact = () => {
                 <Typography as="h1" className="section-title">
                   Contact Us
                 </Typography>
-                <Typography as="subtitle1">
+                <Typography as="h5">
                   Please use the form below to connect with us. Remember us for
                   -
                 </Typography>
@@ -59,7 +59,7 @@ const Contact = () => {
 
               <div className="contact-info-warpper">
                 <div className="contact-title">
-                  <Typography as="h5">We are located at:</Typography>
+                  <Typography as="h4">We are located at:</Typography>
                 </div>
 
                 <div className="contact-method">

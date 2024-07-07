@@ -82,6 +82,7 @@ export const StyledDiv = styled.div`
           top: 20px;
           right: 20px;
           cursor: pointer;
+          font-size: 21px;
 
           @media (max-width: ${theme.breakPoints.md}) {
             top: 15px;

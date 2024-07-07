@@ -26,20 +26,25 @@ export const StyledSection = styled.section`
         color: #fff;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        /* gap: 10px; */
         .h1 {
           color: #fff;
+          &.section-title {
+            padding-top: 0 !important;
+          }
         }
 
-        .section-title {
-          padding-top: 0 !important;
+        .h5 {
+          margin-top: 25px;
         }
 
         .rember-us-wrapper {
           margin-left: 12px;
+          margin-top: 15px;
           display: flex;
           flex-direction: column;
-          gap: 10px;
+          gap: 15px;
+          font-size: 18px;
         }
       }
     }
@@ -63,6 +68,15 @@ export const StyledSection = styled.section`
         .contact-title {
           padding: 20px;
           border-bottom: 1px solid #f2f2f2;
+
+          @media (max-width: ${theme.breakPoints.md}) {
+            padding-left: 0px;
+          }
+
+          .h4 {
+            font-weight: 600;
+            font-size: 22px;
+          }
         }
 
         .contact-method {

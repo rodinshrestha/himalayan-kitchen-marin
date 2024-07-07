@@ -48,6 +48,7 @@ const style = (theme: DefaultTheme) => css`
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 1px;
+    font-weight: 400;
 
     @media (max-width: ${theme.breakPoints.md}) {
       font-size: 16px;
@@ -67,8 +68,8 @@ const style = (theme: DefaultTheme) => css`
     font-weight: 100;
 
     @media (max-width: ${theme.breakPoints.md}) {
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 18px;
+      line-height: 34px;
     }
   }
 
@@ -93,36 +94,26 @@ const style = (theme: DefaultTheme) => css`
 
   &.section-title {
     color: ${theme.coreColor.textColor};
-    font-size: 36px;
+    font-size: 56px;
     font-family: inherit;
     position: relative;
     display: inline-block;
     padding-top: 100px;
-    line-height: 40px;
-    /* &::before {
-      position: absolute;
-      content: "";
-      height: 3px;
-      width: 100%;
-      background-color: ${theme.coreColor.textColor};
-      left: 0;
-      bottom: -12px;
-
-      @media (max-width: ${theme.breakPoints.md}) {
-        height: 2px;
-        bottom: -4px;
-      }
-    } */
+    line-height: 60px;
 
     @media (max-width: ${theme.breakPoints.md}) {
       padding-top: 50px;
-      font-size: 22px;
+      font-size: 38px;
       line-height: 40px;
     }
   }
 
   &.section-title-helper {
     margin-top: 40px;
+
+    @media (max-width: ${theme.breakPoints.md}) {
+      margin-top: 20px;
+    }
   }
 `;
 

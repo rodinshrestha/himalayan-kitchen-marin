@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: rodinshrestha/kitchen-v2
+  repo: rodinshrestha/yakandyeti
   branch: main
 
 publish_mode: editorial_workflow
@@ -69,64 +69,6 @@ collections:
       - { label: "Price", name: "price", widget: "string" }
 
   #######################
-  # Drinks Menu list
-  #######################
-
-  - name: "sparkling_wines"
-    label: "Sparkling Wines"
-    folder: "/content/drinks_menu/sparkling_wines"
-    create: true
-    slug: "{{name}}"
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Price", name: "price", widget: "string" }
-
-  - name: "white_wines"
-    label: "White Wines"
-    folder: "/content/drinks_menu/white_wines"
-    create: true
-    slug: "{{name}}"
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Price", name: "price", widget: "string" }
-
-  - name: "red_wines"
-    label: "Red Wines"
-    folder: "/content/drinks_menu/red_wines"
-    create: true
-    slug: "{{name}}"
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Price", name: "price", widget: "string" }
-
-  - name: "beer"
-    label: "Beer"
-    folder: "/content/drinks_menu/beer"
-    create: true
-    slug: "{{name}}"
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Price", name: "price", widget: "string" }
-
-  - name: "beverages"
-    label: "Beverages"
-    folder: "/content/drinks_menu/beverages"
-    create: true
-    slug: "{{name}}"
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Price", name: "price", widget: "string" }
-
-  - name: "gallery"
-    label: "Gallery"
-    folder: "/content/gallery"
-    create: true
-    slug: "{{name}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-
-  #######################
   # Website Settings
   #######################
 
@@ -162,24 +104,16 @@ collections:
             name: "email"
             widget: "string"
 
-          - label: "Hero Banner Text"
-            name: "hero_banner_text"
-            widget: "text"
-
           - label: "Lunch Time"
             name: "lunch_time"
-            widget: "string"
-
-          - label: "Lunch last seated Time"
-            name: "lunch_last_seated_time"
             widget: "string"
 
           - label: "Dinner Time"
             name: "dinner_time"
             widget: "string"
 
-          - label: "Dinner last seated Time"
-            name: "dinner_last_seated_time"
+          - label: "Menu Service Charge Description"
+            name: "menu_service_charge_description"
             widget: "string"
 
           - label: "Story"
@@ -215,62 +149,6 @@ collections:
             name: "tika_masala_description"
             widget: "string"
 
-      # Drinks Menu Settings
-      - label: "Drinks Menu Helper"
-        name: "drink_menu_helper"
-        file: "content/settings/drinks_menu_helper.json"
-        fields:
-          - label: "Beer Description"
-            name: "beer_description"
-            widget: "string"
-
-          - label: "Beverages Description"
-            name: "beverages_description"
-            widget: "string"
-
-          - label: "Red Wine Description"
-            name: "red_wine_description"
-            widget: "string"
-
-          - label: "Sparkling Wine Description"
-            name: "sparkling_wine_description"
-            widget: "string"
-
-          - label: "White Wine Description"
-            name: "white_wine_description"
-            widget: "text"
-
-      # Menu List Helper
-      - label: "Menu List Helper"
-        name: "menu_list_helper"
-        file: "content/settings/menu_list_helper.json"
-        fields:
-          - label: "Menu Footer Description"
-            name: "menu_footer_description"
-            widget: "string"
-
-          - label: "Menu Footer Address"
-            name: "menu_footer_address"
-            widget: "markdown"
-
-          - label: "Menu Service Charge Description"
-            name: "menu_service_charge_description"
-            widget: "string"
-
-  #######################
-  # Blog Details
-  #######################
-
-  - name: "blog"
-    label: "Blog"
-    folder: "/content/blog"
-    create: true
-    slug: "{{name}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Description", name: "description", widget: "markdown" }
-
   #######################
   # Everest trek details
   #######################
@@ -282,7 +160,6 @@ collections:
         name: everest-base-camp-description
         file: "/content/everest_base_camp_trek/everest-base-camp-description.md"
         fields:
-          - { label: "Image", name: "image", widget: "image" }
           - { label: "Description", name: "description", widget: "markdown" }
 
   # #######################
@@ -347,23 +224,6 @@ collections:
       - label: Everest Trek SEO
         name: everest-trek-seo
         file: "content/seo/everest-trek-seo.json"
-        fields:
-          - label: "Seo Title"
-            name: "seo_title"
-            widget: "string"
-
-          - label: "Meta Description"
-            name: "meta_description"
-            widget: "string"
-
-          - label: "Meta Keywords"
-            name: "meta_keywords"
-            widget: "string"
-
-      # Experience SEO
-      - label: Experience Page SEO
-        name: experience-page-seo
-        file: "content/seo/experience-page-seo.json"
         fields:
           - label: "Seo Title"
             name: "seo_title"

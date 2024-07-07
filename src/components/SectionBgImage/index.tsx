@@ -24,9 +24,7 @@ const SectionBgImage = ({ bgImage, title, description, as = "h1" }: Props) => {
               <Typography as={as as TagType} className="section-title">
                 {title}
               </Typography>
-              {description && (
-                <Typography as="subtitle1">{description}</Typography>
-              )}
+              {description && <Typography as="h5">{description}</Typography>}
             </div>
           </Col>
         </Row>

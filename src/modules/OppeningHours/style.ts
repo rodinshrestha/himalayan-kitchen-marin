@@ -16,6 +16,11 @@ export const StyledDiv = styled.div`
       .oppening-hour-info {
         text-transform: uppercase;
         text-align: center;
+        @media (max-width: ${theme.breakPoints.md}) {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
         .p {
           color: #000000;
           font-size: 16px;

@@ -15,7 +15,7 @@ export const StyledSection = styled.section`
       gap: 10px;
 
       @media (max-width: ${theme.breakPoints.md}) {
-        gap: 30px;
+        gap: 10px;
       }
     }
   `}

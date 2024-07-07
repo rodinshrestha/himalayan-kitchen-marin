@@ -6,6 +6,7 @@ import { Col } from "@/components/Col";
 import ImageWithFallBack from "@/components/ImageWithFallBack";
 import playIcon from "@/assets/images/icons/play-button.png";
 import Modal from "@/components/Modal";
+import YoutubePlayer from "@/components/YoutubePlayer";
 
 const Banner = () => {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
@@ -28,7 +29,7 @@ const Banner = () => {
       </Container>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        asdasd
+        <YoutubePlayer />
       </Modal>
     </StyledDiv>
   );

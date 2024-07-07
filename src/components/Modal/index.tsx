@@ -66,7 +66,7 @@ const Modal = ({
                 <div className="modal-content">
                   <div className="modal-header">
                     <a className="close-btn" onClick={onClose}>
-                      <i className="icon-close" />
+                      X
                     </a>
 
                     {title && (
