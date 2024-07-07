@@ -27,19 +27,6 @@ export const StyledDiv = styled.div`
         .dish-note-content {
           font-style: italic;
         }
-
-        .test {
-          font-family: ${theme.font.SoftCafe};
-          font-weight: 400;
-          font-style: normal;
-          -webkit-font-feature-settings: normal;
-          font-feature-settings: normal;
-          font-variant: normal;
-          letter-spacing: 0;
-          padding-right: 1px;
-          line-height: 0.5;
-          text-transform: none;
-        }
       }
 
       .menu-wrapper {

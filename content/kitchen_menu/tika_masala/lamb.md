@@ -1,4 +1,5 @@
 ---
 name: Lamb
-price: $21.50
+description: Boneless Lamb Tikka cubes.
+price: $19.75
 ---

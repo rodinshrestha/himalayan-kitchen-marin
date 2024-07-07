@@ -1,28 +1,27 @@
 import React from "react";
 import DisplayMenu from "../../../DisplayMenu";
-import Accordion from "@/components/Accordion";
-import { MOMO_STEAMED } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
+import { VEGETABLE_TARKARI } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 import menuHelper from "content/settings/kitchen_menu_helper.json";
 import Typography from "@/components/Typography";
 import { StyledDiv } from "./style";
 
-const Momo = () => {
-  const data = useAllMarkdownData("momo");
+const VegetableTarkariCurry = () => {
+  const data = useAllMarkdownData("vegetable_tarkari_curries");
 
   if (!data.length) return null;
 
-  const { momo_description = "" } = menuHelper || {};
+  const { vegetable_tarkari_curry_description = "" } = menuHelper || {};
 
   return (
     <StyledDiv>
       <div className="dish-information-wrapper">
         <Typography as="h3" className="menu-title">
-          {MOMO_STEAMED}
+          {VEGETABLE_TARKARI}
         </Typography>
-        {momo_description && (
+        {vegetable_tarkari_curry_description && (
           <Typography as="subtitle2" className="dish-note-content">
-            {momo_description}
+            {vegetable_tarkari_curry_description}
           </Typography>
         )}
       </div>
@@ -35,4 +34,4 @@ const Momo = () => {
   );
 };
 
-export default Momo;
+export default VegetableTarkariCurry;

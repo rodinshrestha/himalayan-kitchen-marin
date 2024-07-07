@@ -189,7 +189,7 @@ collections:
         file: "content/settings/kitchen_menu_helper.json"
         fields:
           - label: "Curry Dishes Description"
-            name: "TARKARI_CURRIES_description"
+            name: "vegetable_tarkari_curry_description"
             widget: "string"
 
           - label: "Momo Description"

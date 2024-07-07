@@ -16,6 +16,7 @@ const useAllMarkdownData = (
               price
               name
               description
+              food_type
             }
             html
           }

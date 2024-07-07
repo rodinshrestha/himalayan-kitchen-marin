@@ -18,7 +18,7 @@ const Starter = () => {
     <StyledDiv>
       <div className="dish-information-wrapper">
         <Typography as="h3" className="menu-title">
-          <span className="test">Ã„</span> {APPETIZER_SOUP_SALAD}
+          {APPETIZER_SOUP_SALAD}
         </Typography>
         {starter_salad_description && (
           <Typography as="subtitle2" className="dish-note-content">
@@ -28,14 +28,7 @@ const Starter = () => {
       </div>
       <div className="menu-wrapper">
         {data.map((item, i) => {
-          return (
-            <DisplayMenu
-              name={item.name}
-              price={item.price}
-              desc={item.description}
-              key={i}
-            />
-          );
+          return <DisplayMenu {...item} key={i} />;
         })}
       </div>
     </StyledDiv>

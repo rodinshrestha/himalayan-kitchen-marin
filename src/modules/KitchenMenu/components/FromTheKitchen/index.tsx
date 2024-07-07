@@ -1,7 +1,7 @@
 import React from "react";
 import Starter from "./components/Starter";
 import Momo from "./components/Momo";
-import Curry from "./components/Curry";
+import VegetableTarkariCurry from "./components/VegetableTarkariCurry";
 import Tandori from "./components/Tandori";
 import TikaMasala from "./components/TikaMasala";
 import Sides from "./components/Sides";
@@ -12,9 +12,9 @@ const FromTheKitchen = () => {
     <StyledDiv>
       <Starter />
       <Momo />
-      <Curry />
-      <Tandori />
+      <VegetableTarkariCurry />
       <TikaMasala />
+      <Tandori />
       <Sides />
     </StyledDiv>
   );

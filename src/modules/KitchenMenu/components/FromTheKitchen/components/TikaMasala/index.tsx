@@ -1,5 +1,4 @@
 import React from "react";
-import Accordion from "@/components/Accordion";
 import DisplayMenu from "../../../DisplayMenu";
 import { TIKA_MASALA } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
@@ -29,7 +28,7 @@ const TikaMasala = () => {
 
       <div className="menu-wrapper">
         {data.map((x, i) => {
-          return <DisplayMenu name={x.name} price={x.price} key={i} />;
+          return <DisplayMenu {...x} key={i} />;
         })}
       </div>
     </StyledDiv>

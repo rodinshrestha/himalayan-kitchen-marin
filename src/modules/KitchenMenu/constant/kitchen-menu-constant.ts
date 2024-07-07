@@ -8,7 +8,6 @@ export const CHICKEN_CURRIES = "Chicken Curries";
 export const LAMB_CURRIES = "Lamb Curries";
 export const SEAFOOD_CURRIES = "Sea Food Curries";
 export const BIRYANI = "Biryani";
-
 //Drinks
 export const BEER = "Beer";
 export const BEVERAGES = "Beverages";
