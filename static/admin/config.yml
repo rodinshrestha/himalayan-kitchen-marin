@@ -80,10 +80,6 @@ collections:
         name: "website_settings"
         file: "content/settings/settings.json"
         fields:
-          - label: "Home Page Title"
-            name: "home_page_title"
-            widget: "string"
-
           - label: "Site Logo"
             name: "site_logo"
             widget: "image"
@@ -91,6 +87,14 @@ collections:
           - label: "title logo"
             name: "title_logo"
             widget: image
+
+          - label: "Hero Banner Image"
+            name: "hero_banner_image"
+            widget: image
+
+          - label: "Youtube Video ID"
+            name: "video_id"
+            widget: string
 
           - label: "Footer Text"
             name: "footer_text"
@@ -112,8 +116,20 @@ collections:
             name: "dinner_time"
             widget: "string"
 
+          - label: "Oppening Information"
+            name: "open_information"
+            widget: "string"
+
+          - label: "Oneline Order URL"
+            name: "order_online_url"
+            widget: "string"
+
           - label: "Menu Service Charge Description"
             name: "menu_service_charge_description"
+            widget: "string"
+
+          - label: "Story Sub Description"
+            name: "story_sub_description"
             widget: "string"
 
           - label: "Story"

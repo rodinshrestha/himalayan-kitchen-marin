@@ -3,7 +3,7 @@ import YouTube, { YouTubeProps } from "react-youtube";
 import { CSSProperties } from "styled-components";
 
 type Props = {
-  videoId?: string;
+  videoId: string;
   loading?: "eager" | "lazy";
   id?: string;
   style?: CSSProperties;
@@ -13,7 +13,7 @@ type Props = {
 };
 
 const YoutubePlayer = ({
-  videoId = "8KK1HYCvx9s",
+  videoId = "",
   loading,
   id = "youtube-player",
   style,

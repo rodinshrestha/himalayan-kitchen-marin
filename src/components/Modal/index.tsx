@@ -65,7 +65,13 @@ const Modal = ({
               <div className="modal-dialog" style={style} ref={ref}>
                 <div className="modal-content">
                   <div className="modal-header">
-                    <a className="close-btn" onClick={onClose}>
+                    <a
+                      className="close-btn"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onClose();
+                      }}
+                    >
                       X
                     </a>
 

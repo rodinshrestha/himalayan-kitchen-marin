@@ -17,6 +17,7 @@ const OppeningHours = () => {
     open_information = "OPEN EVERYDAY",
     address = "",
     phone_number = "",
+    order_online_url = "https://www.toasttab.com/yak-and-yeti/v3",
   } = settings || {};
   return (
     <StyledDiv>
@@ -33,12 +34,11 @@ const OppeningHours = () => {
               </div>
 
               <div className="order-wrapper">
-                <Button
-                  skin="contained"
-                  href="https://www.toasttab.com/yak-and-yeti/v3"
-                >
-                  ORDER ONLINE
-                </Button>
+                {order_online_url && (
+                  <Button skin="contained" href={order_online_url}>
+                    ORDER ONLINE
+                  </Button>
+                )}
                 {address && (
                   <div className="location-wrapper">
                     <ImageWithFallBack src={locationIcon} alt="Location icon" />

@@ -1,3 +1,6 @@
+import settings from "content/settings/settings.json";
+
+const defaultOrderURL = "https://www.toasttab.com/yak-and-yeti/v3";
 export const navLink = [
   {
     label: "Home",
@@ -13,7 +16,7 @@ export const navLink = [
   },
   {
     label: "Order Online",
-    url: "https://www.toasttab.com/yak-and-yeti/v3",
+    url: settings?.order_online_url || defaultOrderURL,
   },
 
   {

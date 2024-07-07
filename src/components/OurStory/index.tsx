@@ -8,7 +8,7 @@ import settings from "content/settings/settings.json";
 import Typography from "../Typography";
 
 const OurStory = () => {
-  const { story_content = "" } = settings || {};
+  const { story_content = "", story_sub_description = "" } = settings || {};
   return (
     <StyledSection>
       <Container fluid>
@@ -19,9 +19,11 @@ const OurStory = () => {
                 <Typography as="h2" className="section-title">
                   Our Story
                 </Typography>
-                <Typography as="h6" className="section-title-helper">
-                  From the Himalayas to the heart of wine country - Napa, CA
-                </Typography>
+                {story_sub_description && (
+                  <Typography as="h6" className="section-title-helper">
+                    {story_sub_description}
+                  </Typography>
+                )}
               </div>
 
               {story_content && <Typography as="p">{story_content}</Typography>}
