@@ -1,7 +1,7 @@
 // import settings from "content/settings/settings.json";
 import type { GatsbyConfig } from "gatsby";
 const path = require("path");
-const { title_logo = "" } = require("./content/settings/settings.json");
+// const { title_logo = "" } = require("./content/settings/settings.json");
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -72,7 +72,8 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `./public${title_logo || "./src/assets/images/yak-yeti-logo-xs.png"}`,
+        // icon: `./public${title_logo || "./src/assets/images/yak-yeti-logo-xs.png"}`,
+        icon: "./src/assets/images/yak-yeti-logo-xs.png",
       },
     },
   ],
