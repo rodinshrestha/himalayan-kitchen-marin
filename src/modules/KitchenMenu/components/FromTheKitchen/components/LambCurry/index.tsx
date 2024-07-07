@@ -1,27 +1,27 @@
 import React from "react";
 import DisplayMenu from "../../../DisplayMenu";
-import { CHICKEN_CURRIES } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
+import { LAMB_CURRIES } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 import menuHelper from "content/settings/kitchen_menu_helper.json";
 import Typography from "@/components/Typography";
 import { StyledDiv } from "./style";
 
-const ChickenCurry = () => {
-  const data = useAllMarkdownData("chicken_curries");
+const LambCurry = () => {
+  const data = useAllMarkdownData("lamb_curries");
 
   if (!data.length) return null;
 
-  const { chicken_curry_description = "" } = menuHelper || {};
+  const { lamb_curry_description = "" } = menuHelper || {};
 
   return (
     <StyledDiv>
       <div className="dish-information-wrapper">
         <Typography as="h3" className="menu-title">
-          {CHICKEN_CURRIES}
+          {LAMB_CURRIES}
         </Typography>
-        {chicken_curry_description && (
+        {lamb_curry_description && (
           <Typography as="subtitle2" className="dish-note-content">
-            {chicken_curry_description}
+            {lamb_curry_description}
           </Typography>
         )}
       </div>
@@ -34,4 +34,4 @@ const ChickenCurry = () => {
   );
 };
 
-export default ChickenCurry;
+export default LambCurry;

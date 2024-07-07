@@ -29,14 +29,7 @@ const Tandori = () => {
 
       <div className="menu-wrapper">
         {data.map((x, i) => {
-          return (
-            <DisplayMenu
-              name={x.name}
-              desc={x.description}
-              price={x.price}
-              key={i}
-            />
-          );
+          return <DisplayMenu {...x} key={i} />;
         })}
       </div>
     </StyledDiv>

@@ -1,8 +1,12 @@
 {
   "vegetable_tarkari_curry_description": "(All the curry dishes served with a choice of steamed Basmati or Brown Rice) Please let us know if you like your curries mild, medium or spicy",
+  "chicken_curry_description": "All curries can be made mild, medium or spicy and served with choice of basmati rice or plain naan. to substitute garlic naan or garlic cilantro naan add $1.75",
+  "lamb_curry_description": "All curries can be made mild, medium or spicy and served with choice of basmati rice or plain naan. to substitute garlic naan or garlic cilantro naan add $1.75",
+  "seafood_curry_description": "All curries can be made mild, medium or spicy and served with choice of basmati rice or plain naan. to substitute garlic naan or garlic cilantro naan add $1.75",
   "momo_description": "Served with choice of mild or hot sauce. Option of 8 pcs and 12 pcs",
   "sides_description": "",
   "starter_salad_description": "",
-  "tandoori_description": "(Sizzling Platters) Marinated in yogurt and Himalayan spices and broiled in the tandoor oven, served sizzling on a bed of onions and bell peppers with fresh spinach topping. All Tandoori items served with a choice of Steamed Basmati or Brown rice.",
-  "tika_masala_description": "Cooked in special blend of spices, tomato, onion and creamy sauce and herbs. We also can make it with coconut cream. (salmon and chicken are marinated in yogurt, and can't be dairy free)."
+  "tandoori_description": "All tandoori dishes served with basmati or brown rice or butter naan. Substitute to garlic or garlic cilantro add $1.75",
+  "tika_masala_description": "Cooked in special blend of spices, tomato, onion and creamy sauce and herbs. We also can make it with coconut cream. (salmon and chicken are marinated in yogurt, and can't be dairy free).",
+  "biryani_description": "Saffron flavored basmati rice stir fried with caramelized onion, raisin,House blended spices, mint and cilantro. Served with side Raita (yogurt condiment)"
 }

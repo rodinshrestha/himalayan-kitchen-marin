@@ -1,5 +1,5 @@
 ---
 name: Raita
-description: Homemade yogurt with shredded cucumbers, toasted cumin, mint and spices.
+description: Yogurt with cucumber, carrot, mint and cumin.
 price: $4.50
 ---

@@ -1,5 +1,5 @@
 ---
-name: Tandoori Tikka
+name: Tandoori Chicken Tikka
 description: Free range Chicken breast marinated and broiled in tandoor oven.
-price: $24.95
+price: $21.00
 ---

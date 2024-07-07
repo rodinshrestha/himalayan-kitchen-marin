@@ -34,6 +34,13 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+        }
 
   - name: "vegetable_tarkari_curries"
     label: "Vegetable Tarkari(Vegetable Curries)"
@@ -44,6 +51,13 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+        }
 
   - name: "chicken_curries"
     label: "Chicken Curries"
@@ -54,6 +68,13 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+        }
 
   - name: "lamb_curries"
     label: "Lamb Curries"
@@ -64,6 +85,13 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+        }
 
   - name: "seafood_curries"
     label: "Sea Food Curries"
@@ -74,6 +102,13 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+        }
 
   - name: "biryani"
     label: "Biryani"
@@ -84,6 +119,13 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+        }
 
   - name: "tika_masala"
     label: "Tika Masala"
@@ -94,6 +136,13 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+        }
 
   - name: "tandoori"
     label: "Tandoori"
@@ -104,6 +153,13 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+        }
 
   - name: "sides"
     label: "Sides"
@@ -114,6 +170,13 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+        }
 
   #######################
   # Website Settings
@@ -188,8 +251,20 @@ collections:
         name: "kitchen_menu_helper"
         file: "content/settings/kitchen_menu_helper.json"
         fields:
-          - label: "Curry Dishes Description"
+          - label: "Vegetable Tarkari Curry Description"
             name: "vegetable_tarkari_curry_description"
+            widget: "string"
+
+          - label: "Chicken Curry Description"
+            name: "chicken_curry_description"
+            widget: "string"
+
+          - label: "Lamb Curry Description"
+            name: "lamb_curry_description"
+            widget: "string"
+
+          - label: "Seafood Curry Description"
+            name: "seafood_curry_description"
             widget: "string"
 
           - label: "Momo Description"
@@ -210,6 +285,10 @@ collections:
 
           - label: "Tika Masala Description"
             name: "tika_masala_description"
+            widget: "string"
+
+          - label: "Biryani Description"
+            name: "biryani_description"
             widget: "string"
 
   #######################
@@ -249,44 +328,10 @@ collections:
             name: "meta_keywords"
             widget: "string"
 
-      # About Us SEO
-      - label: About US SEO
-        name: about-us-seo
-        file: "content/seo/about-us-seo.json"
-        fields:
-          - label: "Seo Title"
-            name: "seo_title"
-            widget: "string"
-
-          - label: "Meta Description"
-            name: "meta_description"
-            widget: "string"
-
-          - label: "Meta Keywords"
-            name: "meta_keywords"
-            widget: "string"
-
       # Contact us SEO
       - label: Contact US SEO
         name: contact-us-seo
         file: "content/seo/contact-us-seo.json"
-        fields:
-          - label: "Seo Title"
-            name: "seo_title"
-            widget: "string"
-
-          - label: "Meta Description"
-            name: "meta_description"
-            widget: "string"
-
-          - label: "Meta Keywords"
-            name: "meta_keywords"
-            widget: "string"
-
-      # Everest Trek SEO
-      - label: Everest Trek SEO
-        name: everest-trek-seo
-        file: "content/seo/everest-trek-seo.json"
         fields:
           - label: "Seo Title"
             name: "seo_title"
