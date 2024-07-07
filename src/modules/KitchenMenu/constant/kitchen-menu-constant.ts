@@ -1,4 +1,4 @@
-export const STARTERS_AND_SALADS = "Starters and Salads";
+export const APPETIZER_SOUP_SALAD = "Appetizers, Soup and Salad";
 export const MOMO_STEAMED = "MoMo - Steamed Dumplings";
 export const CURRY_DISHES = "Curry Dishes";
 export const TANDOORI = "Tandoori";

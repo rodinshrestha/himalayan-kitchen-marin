@@ -8,9 +8,9 @@ media_folder: "static/uploads"
 public_folder: /uploads
 
 collections:
-  - name: "starter_salad"
-    label: "Starter and Salad"
-    folder: "/content/kitchen_menu/starter_salad"
+  - name: "appetizers_soup_salad"
+    label: "Appetizers, Soup and Salad"
+    folder: "/content/kitchen_menu/appetizers_soup_salad"
     create: true
     slug: "{{name}}"
     fields:
