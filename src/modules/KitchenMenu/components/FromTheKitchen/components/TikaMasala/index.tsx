@@ -4,13 +4,10 @@ import DisplayMenu from "../../../DisplayMenu";
 import { TIKA_MASALA } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 import menuHelper from "content/settings/kitchen_menu_helper.json";
+import Typography from "@/components/Typography";
+import { StyledDiv } from "./style";
 
-type Props = {
-  accordionState: string;
-  setAccordionState: React.Dispatch<React.SetStateAction<string>>;
-};
-
-const TikaMasala = ({ accordionState, setAccordionState }: Props) => {
+const TikaMasala = () => {
   const data = useAllMarkdownData("tika_masala");
 
   if (!data.length) return null;
@@ -18,32 +15,24 @@ const TikaMasala = ({ accordionState, setAccordionState }: Props) => {
   const { tika_masala_description = "" } = menuHelper || {};
 
   return (
-    <Accordion
-      title={TIKA_MASALA}
-      expanded={accordionState === TIKA_MASALA}
-      onChange={() =>
-        setAccordionState((prev) => (prev === TIKA_MASALA ? "" : TIKA_MASALA))
-      }
-    >
-      <div className="table-wrapper">
+    <StyledDiv>
+      <div className="dish-information-wrapper">
+        <Typography as="h3" className="menu-title">
+          {TIKA_MASALA}
+        </Typography>
         {tika_masala_description && (
-          <p className="dish-note-content">{tika_masala_description}</p>
+          <Typography as="subtitle2" className="dish-note-content">
+            {tika_masala_description}
+          </Typography>
         )}
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((x, i) => {
-              return <DisplayMenu name={x.name} price={x.price} key={i} />;
-            })}
-          </tbody>
-        </table>
       </div>
-    </Accordion>
+
+      <div className="menu-wrapper">
+        {data.map((x, i) => {
+          return <DisplayMenu name={x.name} price={x.price} key={i} />;
+        })}
+      </div>
+    </StyledDiv>
   );
 };
 

@@ -13,116 +13,59 @@ import { contactSchema } from "./contact.schema";
 import emailIcon from "@/assets/images/icons/email.png";
 import phoneIcon from "@/assets/images/icons/phone-call.png";
 import homeIcon from "@/assets/images/icons/home.png";
-import settings from "content/settings/settings.json";
 import Typography from "@/components/Typography";
+import Overlay from "@/components/Overlay";
+import settings from "content/settings/settings.json";
+import ContactForm from "@/components/ContactForm";
 
 const Contact = () => {
-  const [isLoading, setIsLoading] = React.useState(false);
-
   const {
     email = "sherpadaiinsonoma@yahoo.com",
     phone_number = "(707) 963-4439",
   } = settings || {};
 
-  const formik = useFormik<ContactFormTypes>({
-    initialValues: {
-      email: "",
-      message: "",
-      name: "",
-    },
-    enableReinitialize: true,
-    validationSchema: contactSchema,
-    validateOnMount: true,
-    onSubmit: () => {
-      setIsLoading(true);
-
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 1e3);
-    },
-  });
-
   return (
     <StyledSection>
-      <Container>
+      <div className="section-bg-wrapper">
+        <Overlay />
+        <Container fluid>
+          <Row>
+            <Col>
+              <div className="menu-title-content">
+                <Typography as="h1" className="section-title">
+                  Contact Us
+                </Typography>
+                <Typography as="subtitle1">
+                  Please use the form below to connect with us. Remember us for
+                  -
+                </Typography>
+
+                <ul className="rember-us-wrapper">
+                  <li>Private Parties and Events.</li>
+                  <li>Catering and Delivery.</li>
+                  <li>Gift Certificates.</li>
+                </ul>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
+      <Container fluid>
         <Row>
           <Col>
             <div className="contact-wrapper">
-              <div className="form-wrapper">
-                <Typography as="h2" className="section-title contact-title">
-                  Contact Us
-                </Typography>
-                <form
-                  className="form-inner-wrapper"
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    if (!isLoading) {
-                      formik.handleSubmit(e);
-                    }
-                  }}
-                >
-                  <div className="col-6">
-                    <InputField
-                      name="name"
-                      placeholder="sherpa..."
-                      label="Name"
-                      value={formik.values.name}
-                      onBlur={formik.handleBlur}
-                      touched={formik.touched.name}
-                      error={!!formik.errors.name}
-                      errorMsg={formik.errors.name}
-                      onChange={formik.handleChange}
-                    />
-                  </div>
-
-                  <div className="col-6">
-                    <InputField
-                      name="email"
-                      placeholder="sherpa@exmaple.com"
-                      label="Email"
-                      touched={formik.touched.email}
-                      value={formik.values.email}
-                      onBlur={formik.handleBlur}
-                      error={!!formik.errors.email}
-                      errorMsg={formik.errors.email}
-                      onChange={formik.handleChange}
-                    />
-                  </div>
-
-                  <div className="col-12">
-                    <InputTextArea
-                      id="message"
-                      name="message"
-                      placeholder="Food is...."
-                      label="Message"
-                      rows={20}
-                      cols={2}
-                      onBlur={formik.handleBlur}
-                      touched={formik.touched.message}
-                      error={!!formik.errors.message}
-                      errorMsg={formik.errors.message}
-                      onChange={formik.handleChange}
-                      value={formik.values.message}
-                    />
-                  </div>
-
-                  <Button
-                    skin="outline"
-                    size="md"
-                    disabled={isLoading}
-                    loader={isLoading}
-                  >
-                    SEND MESSAGE
-                  </Button>
-                </form>
-              </div>
+              <ContactForm />
 
               <div className="contact-info-warpper">
+                <div className="contact-title">
+                  <Typography as="h5">We are located at:</Typography>
+                </div>
+
                 <div className="contact-method">
                   <Icons icon={emailIcon} />
                   <div className="content-info">
-                    <Typography as="h5">Email</Typography>
-                    <Typography as="subtitle2">
+                    <Typography as="subtitle1">
                       <a href={`mail:${email}`}>{email}</a>
                     </Typography>
                   </div>
@@ -130,9 +73,7 @@ const Contact = () => {
                 <div className="contact-method">
                   <Icons icon={phoneIcon} />
                   <div className="content-info">
-                    <Typography as="h5">Phone</Typography>
-                    <Typography as="subtitle2">
-                      {" "}
+                    <Typography as="subtitle1">
                       <a href={`tel:${phone_number}`}>{phone_number}</a>
                     </Typography>
                   </div>
@@ -140,11 +81,8 @@ const Contact = () => {
                 <div className="contact-method">
                   <Icons icon={homeIcon} />
                   <div className="content-info">
-                    <Typography as="h5">Location</Typography>
-                    <Typography as="subtitle2">
-                      1148 Main Street
-                      <br />
-                      St. Helena, CA 94574
+                    <Typography as="subtitle1">
+                      1148 Main Street St. Helena, CA 94574
                     </Typography>
                   </div>
                 </div>

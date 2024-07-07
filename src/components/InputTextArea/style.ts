@@ -11,7 +11,7 @@ export const StyledDiv = styled.div`
     }
 
     .label-wrapper {
-      color: #fff;
+      color: ${theme.coreColor.textColor};
       display: block;
       font-size: 14px;
       letter-spacing: 0.25em;
@@ -28,15 +28,14 @@ export const StyledDiv = styled.div`
 
 export const InputTextAreaStyle = styled.textarea`
   ${({ theme }) => css`
-    height: 250px;
+    height: 200px;
     width: 100%;
     background: rgba(212, 212, 255, 0.035);
-    border: none;
+    border: 1px solid #bababa;
     outline: 0;
     padding: 0.75em 1em;
     font-family: ${theme.font.defaultSystemTheme};
-
-    font-size: 17pt;
+    font-size: 16px;
     color: ${theme.coreColor.textColor};
     letter-spacing: 1px;
 
@@ -45,7 +44,7 @@ export const InputTextAreaStyle = styled.textarea`
     }
 
     &:focus {
-      border: 1px solid ${theme.coreColor.highlight};
+      border: 1px solid #bababa;
     }
     &.error {
       border: 1px solid red;

@@ -8,6 +8,7 @@ import ImageLightbox from "@/components/ImageLightBox";
 import { getLightBoxImage } from "./utils/get-light-box-image";
 import ImageList from "./components/ImageList";
 import Typography from "@/components/Typography";
+import SectionBgImage from "@/components/SectionBgImage";
 
 type Props = {
   data: Array<{ imageSrc: string }>;
@@ -18,16 +19,15 @@ const Gallery = ({ data }: Props) => {
 
   return (
     <StyledSection>
-      <Container>
+      <SectionBgImage
+        bgImage="https://ucarecdn.com/0acfe6bf-a356-4fe4-a837-bcaa02311ae8/-/progressive/yes/-/format/auto/-/resize/2000x/"
+        title="GALLERY"
+        description="From the Himalayas to the heart of wine country"
+      />
+      <Container fluid>
         <Row>
           <Col>
             <div className="gallery-wrapper">
-              <div className="gallery-wrapper">
-                <Typography as="h1" className="section-title gallery-title">
-                  Gallery
-                </Typography>
-              </div>
-
               <div className="gallery-image-wrapper">
                 {data?.map((x, i) => {
                   if (!x.imageSrc) return;

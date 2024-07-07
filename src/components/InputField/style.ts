@@ -19,7 +19,7 @@ export const StyledDiv = styled.div`
     }
 
     .input-wrap {
-      min-height: 91px;
+      /* min-height: 51px; */
 
       .error-msg {
         color: red;
@@ -31,23 +31,23 @@ export const StyledDiv = styled.div`
 
 export const InputStyle = styled.input`
   ${({ theme }) => css`
-    height: 60px;
+    height: 50px;
     width: 100%;
     background: rgba(212, 212, 255, 0.035);
-    border: none;
+    border: 1px solid #bababa;
     outline: 0;
     padding: 0 1em;
     font-family: ${theme.font.defaultSystemTheme};
-    font-size: 17pt;
+    font-size: 16px;
     color: ${theme.coreColor.textColor};
     letter-spacing: 1px;
 
     &::placeholder {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     &:focus {
-      border: 1px solid ${theme.coreColor.highlight};
+      border: 1px solid #bababa;
     }
 
     &.error {

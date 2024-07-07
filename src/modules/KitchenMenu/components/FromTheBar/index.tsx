@@ -11,27 +11,11 @@ const FromTheBar = () => {
 
   return (
     <StyledDiv>
-      <h3 className="kitchen-menu-title"> From the Bar:</h3>
-      <Beer
-        accordionState={accordionState}
-        setAccordionState={setAccordionState}
-      />
-      <Beverages
-        accordionState={accordionState}
-        setAccordionState={setAccordionState}
-      />
-      <RedWines
-        accordionState={accordionState}
-        setAccordionState={setAccordionState}
-      />
-      <SparklingWines
-        accordionState={accordionState}
-        setAccordionState={setAccordionState}
-      />
-      <WhiteWines
-        accordionState={accordionState}
-        setAccordionState={setAccordionState}
-      />
+      <Beer />
+      <Beverages />
+      <RedWines />
+      <SparklingWines />
+      <WhiteWines />
     </StyledDiv>
   );
 };

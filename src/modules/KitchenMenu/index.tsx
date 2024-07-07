@@ -1,67 +1,48 @@
 import React from "react";
 import { StyledDiv } from "./style";
 import FromTheKitchen from "./components/FromTheKitchen";
-import FromTheBar from "./components/FromTheBar";
 import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
-import namaste from "@/assets/images/namaste.svg";
 import menuHelper from "content/settings/menu_list_helper.json";
 
-import ImageWithFallBack from "@/components/ImageWithFallBack";
 import Typography from "@/components/Typography";
+import Overlay from "@/components/Overlay";
+import SectionBgImage from "@/components/SectionBgImage";
 
 const KitchenMenu = () => {
-  const {
-    menu_footer_address = "",
-    menu_footer_description = "",
-    menu_service_charge_description = "",
-  } = menuHelper || {};
+  const { menu_service_charge_description = "" } = menuHelper || {};
   return (
     <StyledDiv>
+      <SectionBgImage
+        title="From the Kitchen"
+        description="From the Himalayas to the heart of wine country"
+        bgImage="https://ucarecdn.com/77fa410d-bf68-4302-b095-f97271021eaf/-/progressive/yes/-/format/auto/-/resize/2000x/"
+      />
       <Container fluid>
         <Row>
           <Col>
-            <header className="major section-title">
-              <Typography as="h1" className="section-title">
-                WELCOME TO YAK & YETI
-              </Typography>
-            </header>
+            <div className="menu-title-wrapper">
+              <Typography as="h2">WELCOME TO YAK & YETI</Typography>
+            </div>
 
             <div className="kitchen-menu-wrapper">
               <FromTheKitchen />
-              <FromTheBar />
             </div>
           </Col>
         </Row>
 
-        {/* <Row>
-          <Col>
-            <div className="kitchen-information-wrapper">
-              {menu_footer_description && (
-                <Typography as="p" className="kitchen-content">
-                  {menu_footer_description}
-                </Typography>
-              )}
-
-              {menu_footer_address && (
-                <Typography as="p" className="kitchen-location">
-                  {menu_footer_address}
-                </Typography>
-              )}
-
-              {menu_service_charge_description && (
-                <Typography as="p" className="kitchen-service-charge">
+        {menu_service_charge_description && (
+          <Row>
+            <Col>
+              <div className="service-charge-info-wrapper">
+                <Typography as="subtitle2">
                   {menu_service_charge_description}
                 </Typography>
-              )}
-
-              <div className="kitchen-service-logo">
-                <ImageWithFallBack src={namaste} alt="sherpa kitchen logo" />
               </div>
-            </div>
-          </Col>
-        </Row> */}
+            </Col>
+          </Row>
+        )}
       </Container>
     </StyledDiv>
   );

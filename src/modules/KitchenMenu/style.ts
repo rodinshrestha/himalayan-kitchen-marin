@@ -2,75 +2,60 @@ import styled, { css } from "styled-components";
 
 export const StyledDiv = styled.div`
   ${({ theme }) => css`
-    padding-bottom: 100px;
-    border-top: 1px solid rgba(212, 212, 255, 0.1);
+    padding-bottom: 40px;
 
+    .menu-title-wrapper {
+      border-bottom: 1px solid #f2f2f2;
+      padding-bottom: 20px;
+
+      .h2 {
+        padding-top: 40px !important;
+        text-align: center;
+      }
+    }
     .kitchen-menu-wrapper {
       margin-top: 30px;
       display: flex;
       flex-direction: column;
-      gap: 40px;
-      .kitchen-menu-title {
-        text-align: center;
-        letter-spacing: 2px;
-        font-size: 24px;
-        padding: 20px 0;
-        color: ${theme.coreColor.textColor};
-        font-weight: 500;
-        text-transform: uppercase;
 
-        @media (max-width: ${theme.breakPoints.md}) {
-          font-size: 16px;
+      .dish-information-wrapper {
+        margin-bottom: 20px;
+
+        .dish-note-content {
+          font-style: italic;
+        }
+
+        .test {
+          font-family: ${theme.font.SoftCafe};
+          font-weight: 400;
+          font-style: normal;
+          -webkit-font-feature-settings: normal;
+          font-feature-settings: normal;
+          font-variant: normal;
+          letter-spacing: 0;
+          padding-right: 1px;
+          line-height: 0.5;
+          text-transform: none;
         }
       }
 
-      .dish-note-content {
-        color: ${theme.coreColor.textColor};
-        padding: 20px;
-        font-size: 16px;
-        font-weight: 100;
-        line-height: 28px;
+      .menu-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        column-gap: 40px;
       }
     }
 
-    .kitchen-information-wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-      text-align: center;
-      width: 90%;
-      margin: 0 auto;
+    .service-charge-info-wrapper {
       margin-top: 40px;
+      text-align: center;
+      border-top: 1px solid #f2f2f2;
+      padding-top: 40px;
 
-      color: ${theme.coreColor.textColor};
-
-      p {
-        font-weight: 100;
-        letter-spacing: 1px;
-        &.kitchen-location {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-
-          @media (max-width: ${theme.breakPoints.md}) {
-            gap: 5px;
-          }
-        }
-
-        &.kitchen-service-charge {
-          border-top: 1px solid rgba(212, 212, 255, 0.1);
-          padding-top: 40px;
-        }
-      }
-
-      .kitchen-service-logo {
-        height: 110px;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-        }
+      .subtitle2 {
+        font-size: 16px;
+        line-height: 30px;
       }
     }
   `}

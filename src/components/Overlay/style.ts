@@ -10,7 +10,7 @@ interface IProps {
 }
 
 const StyledDiv = styled.div<IProps>`
-  ${({ $position, $opacity, $color, theme, $zIndex }) => css`
+  ${({ $position, $opacity, $color, $zIndex }) => css`
     position: ${$position ? $position : "absolute"};
     background-color: ${transparentize(
       $opacity ? $opacity : 0.67,

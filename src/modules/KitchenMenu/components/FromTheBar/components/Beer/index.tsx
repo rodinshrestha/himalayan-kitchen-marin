@@ -4,13 +4,9 @@ import DisplayMenu from "../../../DisplayMenu";
 import { BEER } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 import drinksHelper from "content/settings/drinks_menu_helper.json";
+import Typography from "@/components/Typography";
 
-type Props = {
-  accordionState: string;
-  setAccordionState: React.Dispatch<React.SetStateAction<string>>;
-};
-
-const Beer = ({ accordionState, setAccordionState }: Props) => {
+const Beer = () => {
   const data = useAllMarkdownData("beer");
 
   if (!data.length) return null;
@@ -18,31 +14,22 @@ const Beer = ({ accordionState, setAccordionState }: Props) => {
   const { beer_description } = drinksHelper || {};
 
   return (
-    <Accordion
-      title={BEER}
-      expanded={accordionState === BEER}
-      onChange={() => setAccordionState((prev) => (prev === BEER ? "" : BEER))}
-    >
+    <div>
+      <Typography as="h3" className="menu-title">
+        {BEER}
+      </Typography>
       <div className="table-wrapper">
         {beer_description && (
           <p className="dish-note-content">{beer_description}</p>
         )}
 
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((x, i) => {
-              return <DisplayMenu name={x.name} price={x.price} key={i} />;
-            })}
-          </tbody>
-        </table>
+        <div className="menu-wrapper">
+          {data.map((x, i) => {
+            return <DisplayMenu name={x.name} price={x.price} key={i} />;
+          })}
+        </div>
       </div>
-    </Accordion>
+    </div>
   );
 };
 

@@ -4,13 +4,9 @@ import Accordion from "@/components/Accordion";
 import { SIDES } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 import menuHelper from "content/settings/kitchen_menu_helper.json";
+import Typography from "@/components/Typography";
 
-type Props = {
-  accordionState: string;
-  setAccordionState: React.Dispatch<React.SetStateAction<string>>;
-};
-
-const Sides = ({ accordionState, setAccordionState }: Props) => {
+const Sides = () => {
   const data = useAllMarkdownData("sides");
 
   if (!data.length) return null;
@@ -18,40 +14,30 @@ const Sides = ({ accordionState, setAccordionState }: Props) => {
   const { sides_description = "" } = menuHelper || {};
 
   return (
-    <Accordion
-      title={SIDES}
-      expanded={accordionState === SIDES}
-      onChange={() =>
-        setAccordionState((prev) => (prev === SIDES ? "" : SIDES))
-      }
-    >
-      <div className="table-wrapper">
+    <div>
+      <div className="dish-information-wrapper">
+        <Typography as="h3" className="menu-title">
+          {SIDES}
+        </Typography>
         {sides_description && (
-          <p className="dish-note-content">{sides_description}</p>
+          <Typography as="subtitle2" className="dish-note-content">
+            {sides_description}
+          </Typography>
         )}
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((x, i) => {
-              return (
-                <DisplayMenu
-                  name={x.name}
-                  desc={x.description}
-                  price={x.price}
-                  key={i}
-                />
-              );
-            })}
-          </tbody>
-        </table>
       </div>
-    </Accordion>
+      <div className="menu-wrapper">
+        {data.map((x, i) => {
+          return (
+            <DisplayMenu
+              name={x.name}
+              desc={x.description}
+              price={x.price}
+              key={i}
+            />
+          );
+        })}
+      </div>
+    </div>
   );
 };
 

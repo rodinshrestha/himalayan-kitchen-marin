@@ -1,4 +1,6 @@
 import React from "react";
+import { StyledDiv } from "./style";
+import Typography from "@/components/Typography";
 
 type Props = {
   name: string;
@@ -8,11 +10,16 @@ type Props = {
 
 const DisplayMenu = ({ name, desc, price }: Props) => {
   return (
-    <tr>
-      {name && <td className="name">{name}</td>}
-      {desc && <td className="desc">{desc}</td>}
-      {price && <td className="price">{price}</td>}
-    </tr>
+    <StyledDiv>
+      <div className="dish-group">
+        <Typography as="h6">{name}</Typography>
+
+        <Typography as="subtitle2">{desc}</Typography>
+      </div>
+      <div className="price-group">
+        <Typography as="span">{price}</Typography>
+      </div>
+    </StyledDiv>
   );
 };
 

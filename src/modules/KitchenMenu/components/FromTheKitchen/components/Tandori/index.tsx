@@ -4,13 +4,10 @@ import Accordion from "@/components/Accordion";
 import { TANDOORI } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 import menuHelper from "content/settings/kitchen_menu_helper.json";
+import Typography from "@/components/Typography";
+import { StyledDiv } from "./style";
 
-type Props = {
-  accordionState: string;
-  setAccordionState: React.Dispatch<React.SetStateAction<string>>;
-};
-
-const Tandori = ({ accordionState, setAccordionState }: Props) => {
+const Tandori = () => {
   const data = useAllMarkdownData("tandoori");
 
   if (!data.length) return null;
@@ -18,41 +15,31 @@ const Tandori = ({ accordionState, setAccordionState }: Props) => {
   const { tandoori_description = "" } = menuHelper || {};
 
   return (
-    <Accordion
-      title={TANDOORI}
-      expanded={accordionState === TANDOORI}
-      onChange={() =>
-        setAccordionState((prev) => (prev === TANDOORI ? "" : TANDOORI))
-      }
-    >
-      <div className="table-wrapper">
+    <StyledDiv>
+      <div className="dish-information-wrapper">
+        <Typography as="h3" className="menu-title">
+          {TANDOORI}
+        </Typography>
         {tandoori_description && (
-          <p className="dish-note-content">{tandoori_description}</p>
+          <Typography as="subtitle2" className="dish-note-content">
+            {tandoori_description}
+          </Typography>
         )}
-
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((x, i) => {
-              return (
-                <DisplayMenu
-                  name={x.name}
-                  desc={x.description}
-                  price={x.price}
-                  key={i}
-                />
-              );
-            })}
-          </tbody>
-        </table>
       </div>
-    </Accordion>
+
+      <div className="menu-wrapper">
+        {data.map((x, i) => {
+          return (
+            <DisplayMenu
+              name={x.name}
+              desc={x.description}
+              price={x.price}
+              key={i}
+            />
+          );
+        })}
+      </div>
+    </StyledDiv>
   );
 };
 

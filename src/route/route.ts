@@ -15,10 +15,6 @@ export const navLink = [
     label: "Order Online",
     url: "https://www.toasttab.com/yak-and-yeti/v3",
   },
-  {
-    label: "Experience",
-    url: "/experience",
-  },
 
   {
     label: "Everest",
