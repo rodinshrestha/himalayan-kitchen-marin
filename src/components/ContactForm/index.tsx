@@ -19,12 +19,34 @@ const ContactForm = () => {
     enableReinitialize: true,
     validationSchema: contactSchema,
     validateOnMount: true,
-    onSubmit: () => {
+    onSubmit: async (value) => {
+      const { name, email, message } = value;
       setIsLoading(true);
 
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 1e3);
+      // setTimeout(() => {
+      //   setIsLoading(false);
+      // }, 1e3);
+
+      fetch("/api/send-mail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      })
+        .then((res) => {
+          if (!res.ok) {
+            alert("Failed to send message.");
+            return;
+          }
+          alert("Message sent successfully!");
+        })
+        .catch(() => {
+          alert("Failed to send message.");
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
     },
   });
   return (
