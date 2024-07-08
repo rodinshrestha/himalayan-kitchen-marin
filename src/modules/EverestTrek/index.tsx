@@ -3,14 +3,13 @@ import { StyledSection } from "./style";
 import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
-import ImageWithFallBack from "@/components/ImageWithFallBack";
 import settings from "content/everest_base_camp_trek/base_camp.json";
 import Typography from "@/components/Typography";
 import Overlay from "@/components/Overlay";
 import ContactForm from "@/components/ContactForm";
 
 const EverestTrek = () => {
-  const { description = "", image = "" } = settings || {};
+  const { description = "" } = settings || {};
   return (
     <StyledSection>
       <div className="video-wrapper">

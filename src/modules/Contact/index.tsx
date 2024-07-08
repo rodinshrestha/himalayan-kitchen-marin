@@ -17,6 +17,7 @@ import Typography from "@/components/Typography";
 import Overlay from "@/components/Overlay";
 import settings from "content/settings/settings.json";
 import ContactForm from "@/components/ContactForm";
+import GoogleMap from "@/components/GoogleMap";
 
 const Contact = () => {
   const {
@@ -91,6 +92,8 @@ const Contact = () => {
           </Col>
         </Row>
       </Container>
+
+      <GoogleMap />
     </StyledSection>
   );
 };

@@ -246,6 +246,18 @@ collections:
             name: "story_content"
             widget: "markdown"
 
+          - label: "Google Map Latitude"
+            name: "map_latitude"
+            widget: "string"
+
+          - label: "Google Map Longitude"
+            name: "map_longitude"
+            widget: "string"
+
+          - label: "Google Map Zoom Level"
+            name: "map_zoom_level"
+            widget: "string"
+
       # Kitchen Menu Settings
       - label: "Kitchen Menu Helper"
         name: "kitchen_menu_helper"

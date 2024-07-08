@@ -91,6 +91,10 @@ ${({ theme }) => css`
     text-transform: none;
     font-size: 30px;
     display: inline-flex;
+
+    @media (max-width: ${theme.breakPoints.md}) {
+      font-size: 24px;
+    }
   }
 `}
 

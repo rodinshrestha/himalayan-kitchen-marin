@@ -15,5 +15,8 @@
   "email": "yakandyetinapa@gmail.com",
   "video_id": "r1Y2-0UZmPM",
   "story_sub_description": "From the Himalayas to the heart of wine country - Napa, CA",
-  "order_online_url": "https://www.toasttab.com/yak-and-yeti/v3"
+  "order_online_url": "https://www.toasttab.com/yak-and-yeti/v3",
+  "map_latitude": "38.31875567024663",
+  "map_longitude": "-122.29787100727772",
+  "map_zoom_level": "20"
 }

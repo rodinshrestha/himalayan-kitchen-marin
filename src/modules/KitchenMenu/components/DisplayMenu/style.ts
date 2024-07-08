@@ -5,8 +5,17 @@ export const StyledDiv = styled.div`
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    gap: 120px;
+
+    @media (max-width: ${theme.breakPoints.md}) {
+      gap: 50px;
+    }
 
     &:hover {
+      .h6 {
+        text-decoration: underline;
+      }
+
       .price-group {
         font-weight: bold;
         .span {
@@ -17,6 +26,7 @@ export const StyledDiv = styled.div`
 
     .price-group {
       display: flex;
+      white-space: nowrap;
 
       .span {
         display: flex;
