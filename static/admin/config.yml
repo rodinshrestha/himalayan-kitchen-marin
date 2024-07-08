@@ -390,3 +390,20 @@ collections:
           - label: "Meta Keywords"
             name: "meta_keywords"
             widget: "string"
+
+      # Everest Experience Page SEO
+      - label: Everest Experience Page SEO
+        name: everest-experience-page-seo
+        file: "content/seo/experience-page-seo.json"
+        fields:
+          - label: "Seo Title"
+            name: "seo_title"
+            widget: "string"
+
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+
+          - label: "Meta Keywords"
+            name: "meta_keywords"
+            widget: "string"
