@@ -78,7 +78,7 @@ export const StyledLink = styled.div`
   `}
 `;
 
-export const StyledDiv = styled.button`
+export const StyledButton = styled.button`
   ${({ theme }) => css`
     background-color: transparent;
     ${defaultStyle(theme)}

@@ -6,6 +6,7 @@ import InputField from "../InputField";
 import InputTextArea from "../InputTextArea";
 import Button from "../Button";
 import { StyledDiv } from "./style";
+import { toast } from "@/utils/toast";
 
 const ContactForm = () => {
   const [isLoading, setIsLoading] = React.useState(false);
@@ -36,13 +37,12 @@ const ContactForm = () => {
       })
         .then((res) => {
           if (!res.ok) {
-            alert("Failed to send message.");
-            return;
+            throw "";
           }
-          alert("Message sent successfully!");
+          toast("Message sent successfully!", "success");
         })
         .catch(() => {
-          alert("Failed to send message.");
+          toast("Something went wrong. Try again later", "failed");
         })
         .finally(() => {
           setIsLoading(false);
@@ -51,15 +51,7 @@ const ContactForm = () => {
   });
   return (
     <StyledDiv className="form-wrapper">
-      <form
-        className="form-inner-wrapper"
-        onSubmit={(e) => {
-          e.preventDefault();
-          if (!isLoading) {
-            formik.handleSubmit(e);
-          }
-        }}
-      >
+      <form className="form-inner-wrapper" onSubmit={formik.handleSubmit}>
         <div className="col-6">
           <InputField
             name="name"

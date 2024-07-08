@@ -1,8 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
-import { StyledDiv, StyledLink } from "./style";
+import { StyledButton, StyledLink } from "./style";
 import clsx from "clsx";
-import { motion } from "framer-motion";
 
 type Props = {
   label?: string;
@@ -30,8 +29,6 @@ const Button = ({
   loader,
   onClick,
 }: Props) => {
-  const MotionStyledButton = motion(StyledDiv);
-
   if (href) {
     return (
       <StyledLink>
@@ -48,13 +45,13 @@ const Button = ({
   }
 
   return (
-    <MotionStyledButton
+    <StyledButton
       className={clsx(className, skin, size, { disabled, isLoading: loader })}
       aria-label={label || "button"}
       onClick={() => (!disabled || !loader) && onClick?.()}
     >
       {loader ? "Loading..." : children}
-    </MotionStyledButton>
+    </StyledButton>
   );
 };
 

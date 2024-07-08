@@ -40,6 +40,7 @@
     "react-helmet": "^6.1.0",
     "react-image-lightbox": "^5.1.4",
     "react-portal": "^4.2.2",
+    "react-toastify": "^10.0.5",
     "react-youtube": "^10.1.0",
     "styled-components": "^6.1.11",
     "yup": "^1.4.0"
