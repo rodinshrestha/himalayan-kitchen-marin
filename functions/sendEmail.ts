@@ -20,16 +20,12 @@ exports.handler = async (event, context) => {
   };
 
   try {
-    const response = await axios.post(
-      "https://api.mailersend.com/v1/email",
-      data,
-      {
-        headers: {
-          Authorization: `Bearer mlsn.eb98adaad5577ff86981f2ded4e07fcde0051060d852bd14d42836b5d6b3169b`,
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    await axios.post("https://api.mailersend.com/v1/email", data, {
+      headers: {
+        Authorization: `Bearer mlsn.eb98adaad5577ff86981f2ded4e07fcde0051060d852bd14d42836b5d6b3169b`,
+        "Content-Type": "application/json",
+      },
+    });
 
     return {
       statusCode: 200,
@@ -39,7 +35,10 @@ exports.handler = async (event, context) => {
     console.error("Error sending email:", error.message);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Failed to send email" }),
+      body: JSON.stringify({
+        error: "Failed to send email",
+        message: error?.message || "server error",
+      }),
     };
   }
 };
