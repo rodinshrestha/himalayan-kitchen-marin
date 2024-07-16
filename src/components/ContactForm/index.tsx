@@ -13,9 +13,9 @@ const ContactForm = () => {
 
   const formik = useFormik<ContactFormTypes>({
     initialValues: {
-      email: "",
-      message: "",
-      name: "",
+      email: "test@gmail.com",
+      message: "this is test",
+      name: "tester",
     },
     enableReinitialize: true,
     validationSchema: contactSchema,
@@ -28,7 +28,7 @@ const ContactForm = () => {
       //   setIsLoading(false);
       // }, 1e3);
 
-      fetch("/api/send-mail", {
+      fetch("/.netlify/functions/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
