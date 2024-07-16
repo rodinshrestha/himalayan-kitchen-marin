@@ -41,7 +41,8 @@ const ContactForm = () => {
           }
           toast("Message sent successfully!", "success");
         })
-        .catch(() => {
+        .catch((err) => {
+          console.log(err, "@@@@");
           toast("Something went wrong. Try again later", "failed");
         })
         .finally(() => {
