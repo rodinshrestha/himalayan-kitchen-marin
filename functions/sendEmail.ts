@@ -6,8 +6,8 @@ exports.handler = async (event, context) => {
 
   const data = {
     from: {
-      email,
-      name,
+      email: "abc@example.com",
+      name: "test",
     },
     to: [
       {
@@ -23,7 +23,7 @@ exports.handler = async (event, context) => {
     await axios.post("https://api.mailersend.com/v1/email", data, {
       headers: {
         Authorization: `Bearer mlsn.eb98adaad5577ff86981f2ded4e07fcde0051060d852bd14d42836b5d6b3169b`,
-        "Content-Type": "application/json",
+        "Content-Type": "Application/json",
       },
     });
 
