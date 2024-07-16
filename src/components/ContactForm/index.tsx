@@ -13,9 +13,9 @@ const ContactForm = () => {
 
   const formik = useFormik<ContactFormTypes>({
     initialValues: {
-      email: "test@gmail.com",
-      message: "this is test",
-      name: "tester",
+      email: "",
+      message: "",
+      name: "",
     },
     enableReinitialize: true,
     validationSchema: contactSchema,
