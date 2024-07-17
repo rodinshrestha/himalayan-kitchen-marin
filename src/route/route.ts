@@ -18,11 +18,6 @@ export const navLink = [
     label: "Order Online",
     url: settings?.order_online_url || defaultOrderURL,
   },
-
-  {
-    label: "Everest",
-    url: "/everest-trek",
-  },
   {
     label: "Contact Us",
     url: "/contact-us",

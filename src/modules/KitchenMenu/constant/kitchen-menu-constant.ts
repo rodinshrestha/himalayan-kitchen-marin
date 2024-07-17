@@ -1,13 +1,16 @@
 export const APPETIZER_SOUP_SALAD = "Appetizers, Soup and Salad";
-export const MOMO_STEAMED = "MoMo(Steamed Dumplings)";
-export const VEGETABLE_TARKARI = "Vegetable Tarkari(Vegetable Curries)";
+export const MOMO_STEAMED = "MO:MO मोमो (NEPALESE STEAMED DUMPLING)";
+export const VEGETABLE_TARKARI = "VEGETARIAN CURRY ( साग सब्जीको तरकारी)";
 export const TIKA_MASALA = "Tika Masala (MOST POPULAR)";
-export const TANDOORI = "Tandoori";
+export const TANDOORI = "HIMALAYAN TANDOORI (SIZZLING PLATTER) तंदूरी";
 export const SIDES = "Sides";
-export const CHICKEN_CURRIES = "Chicken Curries";
-export const LAMB_CURRIES = "Lamb Curries";
-export const SEAFOOD_CURRIES = "Sea Food Curries";
+export const CHICKEN_CURRIES = "CHICKEN CURRIES (कुखुराको तरकारी)";
+export const LAMB_CURRIES = "LAMB CURRIES (कुखुराको तरकारी)";
+export const CHOWMEIN = "NEPALESE STYLE CHOWMEIN";
+export const SEAFOOD_CURRIES = "SEAFOOD CURRY (समुद्री खाना)";
 export const BIRYANI = "Biryani";
+export const NON_BEVERAGES_ALCHOLIC = "NON-ALCOHOLIC BEVERAGE";
+export const HIMILAYAN_TANDOOR = "HIMALAYAN TANDOORI (SIZZLING PLATTER) तंदूरी";
 //Drinks
 export const BEER = "Beer";
 export const BEVERAGES = "Beverages";

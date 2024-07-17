@@ -1,4 +1,5 @@
 ---
-name: Basmati rice, Brown Rice, Side Garlic Broccoli, Raita
-price: $4.50
+name: Basmati rice/ brown rice
+description: Traditional indian rice
+price: $3.00
 ---

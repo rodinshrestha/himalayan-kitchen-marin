@@ -127,26 +127,9 @@ collections:
           multiple: true,
         }
 
-  - name: "tika_masala"
-    label: "Tika Masala"
-    folder: "/content/kitchen_menu/tika_masala"
-    create: true
-    slug: "{{name}}"
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Price", name: "price", widget: "string" }
-      - {
-          label: "Food Type",
-          name: "food_type",
-          widget: "select",
-          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
-          multiple: true,
-        }
-
-  - name: "tandoori"
-    label: "Tandoori"
-    folder: "/content/kitchen_menu/tandoori"
+  - name: "himilayan-tandoori"
+    label: "Himilayan Tandoori"
+    folder: "/content/kitchen_menu/himilayan-tandoori"
     create: true
     slug: "{{name}}"
     fields:
@@ -164,6 +147,23 @@ collections:
   - name: "sides"
     label: "Sides"
     folder: "/content/kitchen_menu/sides"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+        }
+
+  - name: "non-alcholic-beverages"
+    label: "Non Alcholic Beverages"
+    folder: "/content/kitchen_menu/non-alcholic-beverages"
     create: true
     slug: "{{name}}"
     fields:
@@ -291,16 +291,16 @@ collections:
             name: "starter_salad_description"
             widget: "string"
 
-          - label: "Tandoori Description"
-            name: "tandoori_description"
+          - label: "Himilayan Tandoori Description"
+            name: "himilayan_tandoori_description"
             widget: "text"
-
-          - label: "Tika Masala Description"
-            name: "tika_masala_description"
-            widget: "string"
 
           - label: "Biryani Description"
             name: "biryani_description"
+            widget: "string"
+
+          - label: "Non Alcholic Beverage Description"
+            name: "non_beverages_alcholic_description"
             widget: "string"
 
   #######################

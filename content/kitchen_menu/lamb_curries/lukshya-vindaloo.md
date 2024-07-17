@@ -1,5 +1,5 @@
 ---
-name: Lukshya Vindaloo
-description: Lamb and potato cooked tomato and onion based gravy, finished with vinegar and chili sauce.
-price: $19.00
+name: Lamb Saag
+description: Boneless Lamb cooked with fresh spinach in homemade sauce.
+price: $18.95
 ---

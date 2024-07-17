@@ -28,6 +28,7 @@
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-netlify": "^5.1.1",
     "gatsby-plugin-netlify-cms": "^7.12.1",
+    "gatsby-plugin-netlify-functions": "^0.0.3",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-plugin-styled-components": "^6.13.1",
     "gatsby-source-contentful": "^8.13.2",

@@ -1,5 +1,5 @@
 ---
 name: Samosa Chat
-description: Samosa served on the bed of spiced chickpeas & topped with chutneys... Yummy!!!!
-price: $12.50
+description: Yummy, 2 samosas split in halves on the bed of spiced garbanzo beans & garnished with mint, tamarind & yoghurt
+price: $12.95
 ---

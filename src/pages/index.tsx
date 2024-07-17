@@ -6,6 +6,7 @@ import OurStory from "@/components/OurStory";
 
 import seo from "content/seo/home-page-seo.json";
 import Seo from "@/components/Seo";
+import SectionBgImage from "@/components/SectionBgImage";
 
 const Home = () => {
   const {
@@ -22,7 +23,12 @@ const Home = () => {
         seo_title={seo_title}
       />
 
-      <Banner />
+      {/* <Banner /> */}
+      <SectionBgImage
+        title="Welcome to Himalayan Kitchen"
+        description="Serving authentic Himalayan Cuisine ( Taste from Nepal & India) in beautiful San Rafael, CA since 2023"
+        bgImage="https://ucarecdn.com/4eae9286-6f17-4032-bbd2-193e022959e6/-/progressive/yes/-/format/auto/-/resize/2000x/"
+      />
 
       <OurStory />
     </BaseLayout>

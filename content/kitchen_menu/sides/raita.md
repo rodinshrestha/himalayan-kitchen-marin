@@ -1,5 +1,5 @@
 ---
 name: Raita
-description: Yogurt with cucumber, carrot, mint and cumin.
-price: $4.50
+description: homemade youhurt sauce with shredded cucumber, cumin, mint.
+price: $3.25
 ---

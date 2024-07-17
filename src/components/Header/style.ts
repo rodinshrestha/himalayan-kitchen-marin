@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const StyledDiv = styled.div`
   ${({ theme }) => css`
     position: relative;
-    z-index: 10;
+    z-index: 100;
     background-color: ${theme.coreColor.bg};
 
     @keyframes slideDown {
@@ -41,8 +41,8 @@ export const StyledDiv = styled.div`
         position: relative;
         text-decoration: none;
         font-family: ${theme.font.defaultSystemTheme};
+        padding: 10px 0;
         img {
-          /* width: 50px; */
           vertical-align: middle;
 
           @media (max-width: ${theme.breakPoints.md}) {

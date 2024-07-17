@@ -1,7 +1,5 @@
 ---
 name: Veggie Momo
-description: Steamed dumplings filled w/spinach, onion, cabbage & spices.
-price: $12.00 / $16.00
-food_type:
-  - leaf
+description: Steamed dumplings filled with fresh cabbage, carrots, cauliflowers, squash, onion, cilantro & spices.
+price: $12.95 / $16.95
 ---

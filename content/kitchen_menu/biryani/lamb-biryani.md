@@ -1,4 +1,5 @@
 ---
 name: Lamb Biryani
-price: $18.50
+description: boneless lamb
+price: $18.95
 ---

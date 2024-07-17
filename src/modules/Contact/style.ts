@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import bgImage from "@/assets/images/fade-mountain.svg";
 
 export const StyledSection = styled.section`
   ${({ theme }) => css`
@@ -10,7 +9,7 @@ export const StyledSection = styled.section`
     border-top: 1px solid rgba(212, 212, 255, 0.1);
 
     .section-bg-wrapper {
-      background-image: url(${bgImage});
+      background-image: url("https://ucarecdn.com/267cb46b-3893-43ab-a9b8-09cb64320f18/-/crop/3989x3024/43,0/-/preview/-/progressive/yes/-/format/auto/-/resize/2000x/");
       display: flex;
       justify-content: center;
       align-items: center;

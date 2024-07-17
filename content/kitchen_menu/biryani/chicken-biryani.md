@@ -1,4 +1,5 @@
 ---
 name: Chicken Biryani
-price: $17.50
+description: boneless chicken
+price: $17.95
 ---

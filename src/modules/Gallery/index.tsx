@@ -22,7 +22,7 @@ const Gallery = ({ data }: Props) => {
       <SectionBgImage
         bgImage="https://ucarecdn.com/0acfe6bf-a356-4fe4-a837-bcaa02311ae8/-/progressive/yes/-/format/auto/-/resize/2000x/"
         title="GALLERY"
-        description="From the Himalayas to the heart of wine country"
+        description="Authentic Himalayan cuisine in downtown San Rafael"
       />
       <Container fluid>
         <Row>

@@ -1,5 +1,5 @@
 ---
-name: Kukhura Ra Bhanta (chicken and Eggplant)
-description: Free range chicken curry with cubes of Japanese eggplant.
-price: $18.00
+name: Kukhura Bhanta (chicken & eggplant)
+description: Slow cooked chicken & egg plant in homemade sauce.
+price: $17.95
 ---

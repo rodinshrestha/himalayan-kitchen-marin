@@ -3,27 +3,31 @@ import Starter from "./components/Starter";
 import Momo from "./components/Momo";
 import VegetableTarkariCurry from "./components/VegetableTarkariCurry";
 import Tandori from "./components/Tandori";
-import TikaMasala from "./components/TikaMasala";
 import Sides from "./components/Sides";
 import { StyledDiv } from "./style";
 import ChickenCurry from "./components/ChickenCurry";
 import LambCurry from "./components/LambCurry";
 import SeaFoodCurry from "./components/SeaFoodCurry";
 import Biryani from "./components/Biryani";
+import Chowmein from "./components/Chowmein";
+import NonAlcholicBeverage from "./components/NonAlcholicBeverage";
+import HimilayanTandoori from "./components/HimilayanTandoori";
 
 const FromTheKitchen = () => {
   return (
     <StyledDiv>
       <Starter />
       <Momo />
-      <VegetableTarkariCurry />
-      <TikaMasala />
+      <Chowmein />
       <ChickenCurry />
       <LambCurry />
       <SeaFoodCurry />
+      <HimilayanTandoori />
+      <VegetableTarkariCurry />
       <Tandori />
       <Biryani />
       <Sides />
+      <NonAlcholicBeverage />
     </StyledDiv>
   );
 };

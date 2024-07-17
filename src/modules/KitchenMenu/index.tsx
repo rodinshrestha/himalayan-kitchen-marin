@@ -14,15 +14,14 @@ const KitchenMenu = () => {
   return (
     <StyledDiv>
       <SectionBgImage
-        title="From the Kitchen"
-        description="From the Himalayas to the heart of wine country"
-        bgImage="https://ucarecdn.com/77fa410d-bf68-4302-b095-f97271021eaf/-/progressive/yes/-/format/auto/-/resize/2000x/"
+        title="Taste from the Himalayas"
+        bgImage="https://ucarecdn.com/3050f742-fbcb-4856-a5f0-20fb3134de0c/-/crop/2135x3292/590,316/-/preview/-/progressive/yes/-/format/auto/-/resize/2000x/"
       />
       <Container fluid>
         <Row>
           <Col>
             <div className="menu-title-wrapper">
-              <Typography as="h2">WELCOME TO YAK & YETI</Typography>
+              <Typography as="h2">SIMPLY FRESH & MADE WITH LOVE.</Typography>
             </div>
 
             <div className="kitchen-menu-wrapper">

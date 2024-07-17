@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <StyledSection>
       <div className="section-bg-wrapper">
-        <Overlay />
+        <Overlay zIndex={0.7} />
         <Container fluid>
           <Row>
             <Col>

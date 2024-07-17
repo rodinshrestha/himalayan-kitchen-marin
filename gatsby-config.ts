@@ -77,6 +77,13 @@ const config: GatsbyConfig = {
         icon: "./src/assets/images/yak-yeti-logo-xs.png",
       },
     },
+    {
+      resolve: "gatsby-plugin-netlify-functions",
+      options: {
+        functionsSrc: `${__dirname}/functions`,
+        functionsOutput: `${__dirname}/public/functions`,
+      },
+    },
   ],
 };
 
