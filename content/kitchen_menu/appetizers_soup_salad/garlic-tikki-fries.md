@@ -1,5 +1,5 @@
 ---
 name: Garlic Tikki Fries
-description: Potato fries tossed w/ fresh minced garlic (add homemade tikka sauce for $2).
-price: $6.00
+description: Potato fries tossed w/ fresh minced garlic. Served with creamy tikka masala sauce
+price: $8.00
 ---

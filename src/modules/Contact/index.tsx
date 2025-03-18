@@ -1,15 +1,9 @@
 import { Col } from "@/components/Col";
 import { Container } from "@/components/Container";
-import InputField from "@/components/InputField";
 import { Row } from "@/components/Row";
 import React from "react";
 import { StyledSection } from "./style";
-import InputTextArea from "@/components/InputTextArea";
 import Icons from "@/components/Icons";
-import Button from "@/components/Button";
-import { useFormik } from "formik";
-import { ContactFormTypes } from "./contact-form.types";
-import { contactSchema } from "./contact.schema";
 import emailIcon from "@/assets/images/icons/email.png";
 import phoneIcon from "@/assets/images/icons/phone-call.png";
 import homeIcon from "@/assets/images/icons/home.png";

@@ -1,5 +1,5 @@
 ---
 name: Lamb Pharsi (Nepalese Dish)
 description: Lamb & Pumpkin cooked in homemade curry sauce.
-price: $18.95
+price: $19.75
 ---

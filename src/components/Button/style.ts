@@ -16,10 +16,10 @@ const defaultStyle = (theme: DefaultTheme) => css`
   cursor: pointer;
 
   &.contained {
-    background-color: ${theme.coreColor.textColor};
+    background-color: ${theme.coreColor.btnPrimaryColor};
     box-shadow: none;
     color: ${theme.color.white["100"]};
-    border: 1px solid ${theme.coreColor.textColor};
+    border: 1px solid ${theme.coreColor.btnPrimaryColor};
     height: 100%;
 
     &:hover {

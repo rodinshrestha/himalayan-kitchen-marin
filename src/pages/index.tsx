@@ -25,9 +25,9 @@ const Home = () => {
 
       {/* <Banner /> */}
       <SectionBgImage
-        title="Welcome to Himalayan Kitchen"
-        description="Serving authentic Himalayan Cuisine ( Taste from Nepal & India) in beautiful San Rafael, CA since 2023"
-        bgImage="https://ucarecdn.com/4eae9286-6f17-4032-bbd2-193e022959e6/-/progressive/yes/-/format/auto/-/resize/2000x/"
+        title="TASTES FROM THE HIMALAYAS"
+        description="SERVING AND SHARING THE HIMALAYAN CUISINES & CULTURES."
+        bgImage="https://ucarecdn.com/7136dcbf-3d88-4f91-9f9b-92221491a817/-/preview/-/rotate/90/-/enhance/100/-/progressive/yes/-/format/auto/-/resize/2000x/&quot"
       />
 
       <OurStory />

@@ -20,12 +20,16 @@ export const color = {
   lightGrey: {
     100: `rgb(235, 235, 235)`,
   },
+  orange: {
+    100: "#ff8a33",
+  },
 };
 
 export const defaultPalette = {
   bg: "#fff",
   bgAlt: "#2a2f4a",
   textColor: "#5E4933",
+  btnPrimaryColor: color.orange["100"],
   textSecondaryColor: "#5e4933",
   fg: "#ffffff",
   fgBold: "#ffffff",

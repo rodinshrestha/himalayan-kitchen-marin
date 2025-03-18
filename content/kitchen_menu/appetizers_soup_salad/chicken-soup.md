@@ -1,5 +1,5 @@
 ---
 name: Chicken Soup
 description: Light creamy chicken broth, cabbage, carrot.
-price: $6.95 Med / $8.95 large
+price: $7.95 (12oz) / $9.95 (16oz)
 ---

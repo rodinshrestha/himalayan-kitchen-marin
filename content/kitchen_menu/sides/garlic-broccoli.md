@@ -1,5 +1,5 @@
 ---
 name: Garlic Broccoli
 description: Fresh Broccoli sautéed with garlic.
-price: $4.25
+price: $5.25
 ---

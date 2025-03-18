@@ -30,7 +30,6 @@ export const StyledDiv = styled.div`
       display: flex;
       justify-content: space-between;
       height: 90px;
-
       @media (max-width: ${theme.breakPoints.md}) {
         height: 60px;
       }
@@ -42,46 +41,14 @@ export const StyledDiv = styled.div`
         text-decoration: none;
         font-family: ${theme.font.defaultSystemTheme};
         padding: 10px 0;
+        height: 150px;
+        width: 150px;
         img {
           vertical-align: middle;
 
           @media (max-width: ${theme.breakPoints.md}) {
             width: 75px;
-          }
-        }
-
-        .logo-title {
-          display: flex;
-          align-self: center;
-          color: ${theme.coreColor.textColor};
-          text-transform: uppercase;
-          letter-spacing: 0.25em;
-          font-size: 22px;
-          line-height: 27.2px;
-          position: relative;
-          &::before {
-            position: absolute;
-            content: "";
-            bottom: -8px;
-            height: 2px;
-            width: 100%;
-            visibility: hidden;
-            background-color: ${theme.color.white["100"]};
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: all 0.3s ease-in-out 0s;
-            transition: all 0.3s ease-in-out 0s;
-          }
-          &:hover {
-            &::before {
-              visibility: visible;
-              -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-            }
-          }
-
-          @media (max-width: ${theme.breakPoints.md}) {
-            font-size: 12px;
+            height: 75px;
           }
         }
       }
@@ -103,7 +70,6 @@ export const StyledDiv = styled.div`
           .menu-list {
             cursor: pointer;
             position: relative;
-
             &::before {
               position: absolute;
               content: "";
@@ -111,7 +77,7 @@ export const StyledDiv = styled.div`
               height: 2px;
               width: 100%;
               visibility: hidden;
-              background-color: ${theme.coreColor.textColor};
+              background-color: ${theme.color.orange["100"]};
               -webkit-transform: scaleX(0);
               transform: scaleX(0);
               -webkit-transition: all 0.3s ease-in-out 0s;
@@ -120,6 +86,7 @@ export const StyledDiv = styled.div`
 
             &:hover {
               opacity: 0.8;
+              color: ${theme.color.orange["100"]};
               &::before {
                 visibility: visible;
                 -webkit-transform: scaleX(1);
@@ -128,6 +95,7 @@ export const StyledDiv = styled.div`
             }
 
             &.active {
+              color: ${theme.color.orange["100"]};
               &::before {
                 visibility: visible;
                 transform: scaleX(1);
@@ -136,6 +104,8 @@ export const StyledDiv = styled.div`
             }
             a {
               color: inherit;
+
+              padding: 0 5px;
             }
           }
         }

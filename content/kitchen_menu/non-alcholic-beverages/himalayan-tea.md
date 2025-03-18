@@ -1,5 +1,5 @@
 ---
 name: Himalayan Tea
 description: Honey , Lemon , Ginger.
-price: $4.95
+price: $5.95
 ---

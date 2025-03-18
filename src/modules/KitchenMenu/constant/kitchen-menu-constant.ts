@@ -8,7 +8,7 @@ export const CHICKEN_CURRIES = "CHICKEN CURRIES (कुखुराको तर
 export const LAMB_CURRIES = "LAMB CURRIES (कुखुराको तरकारी)";
 export const CHOWMEIN = "NEPALESE STYLE CHOWMEIN";
 export const SEAFOOD_CURRIES = "SEAFOOD CURRY (समुद्री खाना)";
-export const BIRYANI = "Biryani";
+export const BIRYANI = "Biryani (बिरयानी)";
 export const NON_BEVERAGES_ALCHOLIC = "NON-ALCOHOLIC BEVERAGE";
 export const HIMILAYAN_TANDOOR = "HIMALAYAN TANDOORI (SIZZLING PLATTER) तंदूरी";
 //Drinks

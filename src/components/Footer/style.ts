@@ -5,14 +5,20 @@ export const StyledFooter = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 20px 20px 20px;
+    flex-direction: column;
+
+    .footer-icon-list {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
     .copyright {
-      list-style: none;
-      font-family: ${theme.font.defaultSystemTheme};
-      margin-top: 20px;
-      opacity: 0.3;
       color: ${theme.coreColor.textColor};
-      letter-spacing: 2px;
+
+      @media (max-width: ${theme.breakPoints.md}) {
+        text-align: center;
+      }
     }
   `}
 `;

@@ -8,7 +8,6 @@ const MenuPage = () => {
   return (
     <BaseLayout>
       <Seo {...seo} />
-
       <KitchenMenu />
     </BaseLayout>
   );

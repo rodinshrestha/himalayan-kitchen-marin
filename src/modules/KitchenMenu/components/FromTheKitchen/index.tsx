@@ -2,7 +2,6 @@ import React from "react";
 import Starter from "./components/Starter";
 import Momo from "./components/Momo";
 import VegetableTarkariCurry from "./components/VegetableTarkariCurry";
-import Tandori from "./components/Tandori";
 import Sides from "./components/Sides";
 import { StyledDiv } from "./style";
 import ChickenCurry from "./components/ChickenCurry";
@@ -21,10 +20,9 @@ const FromTheKitchen = () => {
       <Chowmein />
       <ChickenCurry />
       <LambCurry />
+      <VegetableTarkariCurry />
       <SeaFoodCurry />
       <HimilayanTandoori />
-      <VegetableTarkariCurry />
-      <Tandori />
       <Biryani />
       <Sides />
       <NonAlcholicBeverage />

@@ -9,7 +9,6 @@ import { Col } from "../Col";
 import HamburgerMenuIcon from "../HamburgerIcon";
 import Drawer from "../Drawer";
 import clsx from "clsx";
-import logo from "@/assets/images/yak-yeti-logo-xs.png";
 import Menu from "../MenuList";
 import settings from "content/settings/settings.json";
 import { navLink } from "@/route/route";
@@ -47,7 +46,7 @@ const Header = ({ onToggleMenu }: Props) => {
               <div className="header-wrapper">
                 <Link to="/" className="logo-wrapper">
                   <ImageWithFallBack
-                    src={site_logo || logo}
+                    src={site_logo}
                     alt="sherpa kitchen logo"
                   />
                 </Link>

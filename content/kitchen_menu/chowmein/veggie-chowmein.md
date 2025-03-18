@@ -1,5 +1,5 @@
 ---
 name: Veggie Chowmein
-description: seasonal veggies.
-price: $14.95
+description: cabbage, carrot, green beans, onions, soy.
+price: $15.95
 ---

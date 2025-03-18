@@ -1,5 +1,5 @@
 ---
 name: Cheese Nan
-description: Traditional Indian bread baked in tandor clay oven with cheese
-price: $4.95
+description: Traditional Indian bread with mozzarella cheese baked in tandor clay oven
+price: $5.95
 ---

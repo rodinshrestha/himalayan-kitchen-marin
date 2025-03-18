@@ -268,6 +268,14 @@ collections:
             name: "map_zoom_level"
             widget: "string"
 
+          - label: "Facebook Link"
+            name: "facebook_link"
+            widget: "string"
+
+          - label: "Instagram Link"
+            name: "instagram_link"
+            widget: "string"
+
       # Kitchen Menu Settings
       - label: "Kitchen Menu Helper"
         name: "kitchen_menu_helper"

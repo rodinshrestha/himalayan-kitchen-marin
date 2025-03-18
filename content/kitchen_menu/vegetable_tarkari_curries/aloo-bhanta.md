@@ -1,5 +1,5 @@
 ---
-name: Alu Bahnt (Nepalese Dish)
+name: Aloo Bhanta
 description: Potato & egg plant made with homemade sauce.
-price: $15.25
+price: $16.25
 ---

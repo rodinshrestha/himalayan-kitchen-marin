@@ -1,5 +1,5 @@
 ---
-name: Plain / Butter Naan / Roti (whole wheat)
+name: Plain / Butter Naan
 description: Traditional Indian bread baked in tandor clay oven.
-price: $3.75
+price: $3.55
 ---
